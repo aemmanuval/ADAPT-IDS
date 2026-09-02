@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_1788371057",
+  "timestamp": "2026-09-02T23:14:17",
+  "experiment_name": "temporal_evaluation",
+  "seed": 42,
+  "split": "temporal",
+  "train_fraction": 0.7,
+  "test_fraction": 0.2,
+  "temporal_info": {
+    "available": false
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "experiment_id": "exp_1788370832",
+  "timestamp": "2026-09-02T23:10:32",
+  "experiment_name": "baseline_random_split",
+  "seed": 42,
+  "split": "random",
+  "train_size": 1787170,
+  "test_size": 446793,
+  "n_features": 65
+}

@@ -1,0 +1,3215 @@
+[
+  {
+    "event_id": 1,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 2207,
+    "timestamp": "2026-09-02T23:14:36",
+    "model_version": "baseline_v1",
+    "window_size": 416.0,
+    "metric_context": {
+      "rolling_error_500": 0.934,
+      "cumulative_error": 0.9624
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 2208,
+      "n_drifts": 1,
+      "window_size": 416.0,
+      "estimation": 0.9254807692307693
+    }
+  },
+  {
+    "event_id": 2,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 2591,
+    "timestamp": "2026-09-02T23:14:36",
+    "model_version": "baseline_v1",
+    "window_size": 128.0,
+    "metric_context": {
+      "rolling_error_500": 0.858,
+      "cumulative_error": 0.9479
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 2592,
+      "n_drifts": 2,
+      "window_size": 128.0,
+      "estimation": 0.65625
+    }
+  },
+  {
+    "event_id": 3,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 2783,
+    "timestamp": "2026-09-02T23:14:36",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.608,
+      "cumulative_error": 0.8994
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 2784,
+      "n_drifts": 3,
+      "window_size": 64.0,
+      "estimation": 0.65625
+    }
+  },
+  {
+    "event_id": 4,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 5375,
+    "timestamp": "2026-09-02T23:14:37",
+    "model_version": "baseline_v1",
+    "window_size": 544.0,
+    "metric_context": {
+      "rolling_error_500": 0.938,
+      "cumulative_error": 0.931
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 5376,
+      "n_drifts": 4,
+      "window_size": 544.0,
+      "estimation": 0.9393382352941176
+    }
+  },
+  {
+    "event_id": 5,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 5471,
+    "timestamp": "2026-09-02T23:14:37",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.82,
+      "cumulative_error": 0.9211
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 5472,
+      "n_drifts": 5,
+      "window_size": 80.0,
+      "estimation": 0.4375
+    }
+  },
+  {
+    "event_id": 6,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 8095,
+    "timestamp": "2026-09-02T23:14:38",
+    "model_version": "baseline_v1",
+    "window_size": 256.0,
+    "metric_context": {
+      "rolling_error_500": 0.93,
+      "cumulative_error": 0.9344
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 8096,
+      "n_drifts": 6,
+      "window_size": 256.0,
+      "estimation": 0.8671875
+    }
+  },
+  {
+    "event_id": 7,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 8191,
+    "timestamp": "2026-09-02T23:14:38",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.856,
+      "cumulative_error": 0.9307
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 8192,
+      "n_drifts": 7,
+      "window_size": 80.0,
+      "estimation": 0.725
+    }
+  },
+  {
+    "event_id": 8,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 10911,
+    "timestamp": "2026-09-02T23:14:39",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.88,
+      "cumulative_error": 0.9363
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 10912,
+      "n_drifts": 8,
+      "window_size": 64.0,
+      "estimation": 0.3125
+    }
+  },
+  {
+    "event_id": 9,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 13599,
+    "timestamp": "2026-09-02T23:14:40",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.888,
+      "cumulative_error": 0.9396
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 13600,
+      "n_drifts": 9,
+      "window_size": 80.0,
+      "estimation": 0.5625
+    }
+  },
+  {
+    "event_id": 10,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 13823,
+    "timestamp": "2026-09-02T23:14:40",
+    "model_version": "baseline_v1",
+    "window_size": 192.0,
+    "metric_context": {
+      "rolling_error_500": 0.856,
+      "cumulative_error": 0.9387
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 13824,
+      "n_drifts": 10,
+      "window_size": 192.0,
+      "estimation": 0.9479166666666666
+    }
+  },
+  {
+    "event_id": 11,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 16287,
+    "timestamp": "2026-09-02T23:14:41",
+    "model_version": "baseline_v1",
+    "window_size": 544.0,
+    "metric_context": {
+      "rolling_error_500": 0.936,
+      "cumulative_error": 0.9436
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 16288,
+      "n_drifts": 11,
+      "window_size": 544.0,
+      "estimation": 0.9411764705882353
+    }
+  },
+  {
+    "event_id": 12,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 19007,
+    "timestamp": "2026-09-02T23:14:42",
+    "model_version": "baseline_v1",
+    "window_size": 288.0,
+    "metric_context": {
+      "rolling_error_500": 0.944,
+      "cumulative_error": 0.9473
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 19008,
+      "n_drifts": 12,
+      "window_size": 288.0,
+      "estimation": 0.9201388888888888
+    }
+  },
+  {
+    "event_id": 13,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 21695,
+    "timestamp": "2026-09-02T23:14:43",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.92,
+      "cumulative_error": 0.9492
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 21696,
+      "n_drifts": 13,
+      "window_size": 64.0,
+      "estimation": 0.53125
+    }
+  },
+  {
+    "event_id": 14,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 24287,
+    "timestamp": "2026-09-02T23:14:44",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.906,
+      "cumulative_error": 0.9496
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 24288,
+      "n_drifts": 14,
+      "window_size": 64.0,
+      "estimation": 0.359375
+    }
+  },
+  {
+    "event_id": 15,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 26975,
+    "timestamp": "2026-09-02T23:14:44",
+    "model_version": "baseline_v1",
+    "window_size": 1664.0,
+    "metric_context": {
+      "rolling_error_500": 0.896,
+      "cumulative_error": 0.948
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 26976,
+      "n_drifts": 15,
+      "window_size": 1664.0,
+      "estimation": 0.9182692307692307
+    }
+  },
+  {
+    "event_id": 16,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 27455,
+    "timestamp": "2026-09-02T23:14:45",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.096,
+      "cumulative_error": 0.9328
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 27456,
+      "n_drifts": 16,
+      "window_size": 64.0,
+      "estimation": 0.390625
+    }
+  },
+  {
+    "event_id": 17,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 28863,
+    "timestamp": "2026-09-02T23:14:45",
+    "model_version": "baseline_v1",
+    "window_size": 112.0,
+    "metric_context": {
+      "rolling_error_500": 0.952,
+      "cumulative_error": 0.9342
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 28864,
+      "n_drifts": 17,
+      "window_size": 112.0,
+      "estimation": 0.8214285714285714
+    }
+  },
+  {
+    "event_id": 18,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 30143,
+    "timestamp": "2026-09-02T23:14:45",
+    "model_version": "baseline_v1",
+    "window_size": 128.0,
+    "metric_context": {
+      "rolling_error_500": 0.906,
+      "cumulative_error": 0.9344
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 30144,
+      "n_drifts": 18,
+      "window_size": 128.0,
+      "estimation": 0.7265625
+    }
+  },
+  {
+    "event_id": 19,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 30239,
+    "timestamp": "2026-09-02T23:14:45",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.852,
+      "cumulative_error": 0.9337
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 30240,
+      "n_drifts": 19,
+      "window_size": 80.0,
+      "estimation": 0.85
+    }
+  },
+  {
+    "event_id": 20,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 32863,
+    "timestamp": "2026-09-02T23:14:46",
+    "model_version": "baseline_v1",
+    "window_size": 576.0,
+    "metric_context": {
+      "rolling_error_500": 0.938,
+      "cumulative_error": 0.9361
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 32864,
+      "n_drifts": 20,
+      "window_size": 576.0,
+      "estimation": 0.9461805555555556
+    }
+  },
+  {
+    "event_id": 21,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 35167,
+    "timestamp": "2026-09-02T23:14:47",
+    "model_version": "baseline_v1",
+    "window_size": 2048.0,
+    "metric_context": {
+      "rolling_error_500": 0.982,
+      "cumulative_error": 0.938
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 35168,
+      "n_drifts": 21,
+      "window_size": 2048.0,
+      "estimation": 0.97021484375
+    }
+  },
+  {
+    "event_id": 22,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 35583,
+    "timestamp": "2026-09-02T23:14:47",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.906,
+      "cumulative_error": 0.9374
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 35584,
+      "n_drifts": 22,
+      "window_size": 80.0,
+      "estimation": 0.4625
+    }
+  },
+  {
+    "event_id": 23,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 35711,
+    "timestamp": "2026-09-02T23:14:47",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.74,
+      "cumulative_error": 0.9353
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 35712,
+      "n_drifts": 23,
+      "window_size": 64.0,
+      "estimation": 0.6875
+    }
+  },
+  {
+    "event_id": 24,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 38463,
+    "timestamp": "2026-09-02T23:14:48",
+    "model_version": "baseline_v1",
+    "window_size": 192.0,
+    "metric_context": {
+      "rolling_error_500": 0.932,
+      "cumulative_error": 0.9367
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 38464,
+      "n_drifts": 24,
+      "window_size": 192.0,
+      "estimation": 0.8697916666666666
+    }
+  },
+  {
+    "event_id": 25,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 41055,
+    "timestamp": "2026-09-02T23:14:49",
+    "model_version": "baseline_v1",
+    "window_size": 160.0,
+    "metric_context": {
+      "rolling_error_500": 0.936,
+      "cumulative_error": 0.9386
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 41056,
+      "n_drifts": 25,
+      "window_size": 160.0,
+      "estimation": 0.8625
+    }
+  },
+  {
+    "event_id": 26,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 43743,
+    "timestamp": "2026-09-02T23:14:50",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.914,
+      "cumulative_error": 0.9403
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 43744,
+      "n_drifts": 26,
+      "window_size": 64.0,
+      "estimation": 0.515625
+    }
+  },
+  {
+    "event_id": 27,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 43871,
+    "timestamp": "2026-09-02T23:14:50",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.734,
+      "cumulative_error": 0.9384
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 43872,
+      "n_drifts": 27,
+      "window_size": 64.0,
+      "estimation": 0.53125
+    }
+  },
+  {
+    "event_id": 28,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 46463,
+    "timestamp": "2026-09-02T23:14:51",
+    "model_version": "baseline_v1",
+    "window_size": 1312.0,
+    "metric_context": {
+      "rolling_error_500": 0.918,
+      "cumulative_error": 0.9391
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 46464,
+      "n_drifts": 28,
+      "window_size": 1312.0,
+      "estimation": 0.9420731707317073
+    }
+  },
+  {
+    "event_id": 29,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 46655,
+    "timestamp": "2026-09-02T23:14:51",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.62,
+      "cumulative_error": 0.9359
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 46656,
+      "n_drifts": 29,
+      "window_size": 64.0,
+      "estimation": 0.359375
+    }
+  },
+  {
+    "event_id": 30,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 49343,
+    "timestamp": "2026-09-02T23:14:52",
+    "model_version": "baseline_v1",
+    "window_size": 192.0,
+    "metric_context": {
+      "rolling_error_500": 0.908,
+      "cumulative_error": 0.9368
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 49344,
+      "n_drifts": 30,
+      "window_size": 192.0,
+      "estimation": 0.796875
+    }
+  },
+  {
+    "event_id": 31,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 49471,
+    "timestamp": "2026-09-02T23:14:52",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.706,
+      "cumulative_error": 0.9349
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 49472,
+      "n_drifts": 31,
+      "window_size": 64.0,
+      "estimation": 0.359375
+    }
+  },
+  {
+    "event_id": 32,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 52127,
+    "timestamp": "2026-09-02T23:14:53",
+    "model_version": "baseline_v1",
+    "window_size": 112.0,
+    "metric_context": {
+      "rolling_error_500": 0.908,
+      "cumulative_error": 0.9364
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 52128,
+      "n_drifts": 32,
+      "window_size": 112.0,
+      "estimation": 0.6517857142857143
+    }
+  },
+  {
+    "event_id": 33,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 54719,
+    "timestamp": "2026-09-02T23:14:54",
+    "model_version": "baseline_v1",
+    "window_size": 256.0,
+    "metric_context": {
+      "rolling_error_500": 0.908,
+      "cumulative_error": 0.9376
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 54720,
+      "n_drifts": 33,
+      "window_size": 256.0,
+      "estimation": 0.86328125
+    }
+  },
+  {
+    "event_id": 34,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 54879,
+    "timestamp": "2026-09-02T23:14:54",
+    "model_version": "baseline_v1",
+    "window_size": 112.0,
+    "metric_context": {
+      "rolling_error_500": 0.818,
+      "cumulative_error": 0.9369
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 54880,
+      "n_drifts": 34,
+      "window_size": 112.0,
+      "estimation": 0.8482142857142857
+    }
+  },
+  {
+    "event_id": 35,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 55583,
+    "timestamp": "2026-09-02T23:14:54",
+    "model_version": "baseline_v1",
+    "window_size": 256.0,
+    "metric_context": {
+      "rolling_error_500": 0.952,
+      "cumulative_error": 0.9372
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 55584,
+      "n_drifts": 35,
+      "window_size": 256.0,
+      "estimation": 0.93359375
+    }
+  },
+  {
+    "event_id": 36,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 56543,
+    "timestamp": "2026-09-02T23:14:54",
+    "model_version": "baseline_v1",
+    "window_size": 832.0,
+    "metric_context": {
+      "rolling_error_500": 0.942,
+      "cumulative_error": 0.9376
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 56544,
+      "n_drifts": 36,
+      "window_size": 832.0,
+      "estimation": 0.9579326923076923
+    }
+  },
+  {
+    "event_id": 37,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 57343,
+    "timestamp": "2026-09-02T23:14:54",
+    "model_version": "baseline_v1",
+    "window_size": 288.0,
+    "metric_context": {
+      "rolling_error_500": 0.93,
+      "cumulative_error": 0.9378
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 57344,
+      "n_drifts": 37,
+      "window_size": 288.0,
+      "estimation": 0.8993055555555556
+    }
+  },
+  {
+    "event_id": 38,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 57439,
+    "timestamp": "2026-09-02T23:14:54",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.856,
+      "cumulative_error": 0.9372
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 57440,
+      "n_drifts": 38,
+      "window_size": 64.0,
+      "estimation": 0.859375
+    }
+  },
+  {
+    "event_id": 39,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 59999,
+    "timestamp": "2026-09-02T23:14:55",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.914,
+      "cumulative_error": 0.9383
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 60000,
+      "n_drifts": 39,
+      "window_size": 80.0,
+      "estimation": 0.725
+    }
+  },
+  {
+    "event_id": 40,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 60255,
+    "timestamp": "2026-09-02T23:14:55",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.49,
+      "cumulative_error": 0.9348
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 60256,
+      "n_drifts": 40,
+      "window_size": 64.0,
+      "estimation": 0.5
+    }
+  },
+  {
+    "event_id": 41,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 62911,
+    "timestamp": "2026-09-02T23:14:56",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.888,
+      "cumulative_error": 0.9351
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 62912,
+      "n_drifts": 41,
+      "window_size": 80.0,
+      "estimation": 0.55
+    }
+  },
+  {
+    "event_id": 42,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 63263,
+    "timestamp": "2026-09-02T23:14:56",
+    "model_version": "baseline_v1",
+    "window_size": 288.0,
+    "metric_context": {
+      "rolling_error_500": 0.842,
+      "cumulative_error": 0.9349
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 63264,
+      "n_drifts": 42,
+      "window_size": 288.0,
+      "estimation": 0.9236111111111112
+    }
+  },
+  {
+    "event_id": 43,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 64383,
+    "timestamp": "2026-09-02T23:14:57",
+    "model_version": "baseline_v1",
+    "window_size": 480.0,
+    "metric_context": {
+      "rolling_error_500": 0.928,
+      "cumulative_error": 0.9351
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 64384,
+      "n_drifts": 43,
+      "window_size": 480.0,
+      "estimation": 0.925
+    }
+  },
+  {
+    "event_id": 44,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 65535,
+    "timestamp": "2026-09-02T23:14:57",
+    "model_version": "baseline_v1",
+    "window_size": 640.0,
+    "metric_context": {
+      "rolling_error_500": 0.89,
+      "cumulative_error": 0.935
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 65536,
+      "n_drifts": 44,
+      "window_size": 640.0,
+      "estimation": 0.9078125
+    }
+  },
+  {
+    "event_id": 45,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 65663,
+    "timestamp": "2026-09-02T23:14:57",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.776,
+      "cumulative_error": 0.9342
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 65664,
+      "n_drifts": 45,
+      "window_size": 80.0,
+      "estimation": 0.2625
+    }
+  },
+  {
+    "event_id": 46,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 65791,
+    "timestamp": "2026-09-02T23:14:57",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.588,
+      "cumulative_error": 0.9327
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 65792,
+      "n_drifts": 46,
+      "window_size": 80.0,
+      "estimation": 0.3125
+    }
+  },
+  {
+    "event_id": 47,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 68479,
+    "timestamp": "2026-09-02T23:14:58",
+    "model_version": "baseline_v1",
+    "window_size": 448.0,
+    "metric_context": {
+      "rolling_error_500": 0.946,
+      "cumulative_error": 0.9341
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 68480,
+      "n_drifts": 47,
+      "window_size": 448.0,
+      "estimation": 0.9397321428571429
+    }
+  },
+  {
+    "event_id": 48,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 68607,
+    "timestamp": "2026-09-02T23:14:58",
+    "model_version": "baseline_v1",
+    "window_size": 112.0,
+    "metric_context": {
+      "rolling_error_500": 0.79,
+      "cumulative_error": 0.933
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 68608,
+      "n_drifts": 48,
+      "window_size": 112.0,
+      "estimation": 0.42857142857142855
+    }
+  },
+  {
+    "event_id": 49,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 71199,
+    "timestamp": "2026-09-02T23:14:59",
+    "model_version": "baseline_v1",
+    "window_size": 480.0,
+    "metric_context": {
+      "rolling_error_500": 0.932,
+      "cumulative_error": 0.9339
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 71200,
+      "n_drifts": 49,
+      "window_size": 480.0,
+      "estimation": 0.9291666666666667
+    }
+  },
+  {
+    "event_id": 50,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 71295,
+    "timestamp": "2026-09-02T23:14:59",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.872,
+      "cumulative_error": 0.9335
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 71296,
+      "n_drifts": 50,
+      "window_size": 80.0,
+      "estimation": 0.7625
+    }
+  },
+  {
+    "event_id": 51,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 73919,
+    "timestamp": "2026-09-02T23:15:00",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.912,
+      "cumulative_error": 0.9344
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 73920,
+      "n_drifts": 51,
+      "window_size": 64.0,
+      "estimation": 0.546875
+    }
+  },
+  {
+    "event_id": 52,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 74015,
+    "timestamp": "2026-09-02T23:15:00",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.792,
+      "cumulative_error": 0.9337
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 74016,
+      "n_drifts": 52,
+      "window_size": 80.0,
+      "estimation": 0.425
+    }
+  },
+  {
+    "event_id": 53,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 75679,
+    "timestamp": "2026-09-02T23:15:00",
+    "model_version": "baseline_v1",
+    "window_size": 1408.0,
+    "metric_context": {
+      "rolling_error_500": 0.926,
+      "cumulative_error": 0.9344
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 75680,
+      "n_drifts": 53,
+      "window_size": 1408.0,
+      "estimation": 0.9588068181818182
+    }
+  },
+  {
+    "event_id": 54,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 76575,
+    "timestamp": "2026-09-02T23:15:01",
+    "model_version": "baseline_v1",
+    "window_size": 160.0,
+    "metric_context": {
+      "rolling_error_500": 0.904,
+      "cumulative_error": 0.9341
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 76576,
+      "n_drifts": 54,
+      "window_size": 160.0,
+      "estimation": 0.78125
+    }
+  },
+  {
+    "event_id": 55,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 76735,
+    "timestamp": "2026-09-02T23:15:01",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.688,
+      "cumulative_error": 0.9328
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 76736,
+      "n_drifts": 55,
+      "window_size": 64.0,
+      "estimation": 0.734375
+    }
+  },
+  {
+    "event_id": 56,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 79519,
+    "timestamp": "2026-09-02T23:15:02",
+    "model_version": "baseline_v1",
+    "window_size": 256.0,
+    "metric_context": {
+      "rolling_error_500": 0.908,
+      "cumulative_error": 0.9332
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 79520,
+      "n_drifts": 56,
+      "window_size": 256.0,
+      "estimation": 0.85546875
+    }
+  },
+  {
+    "event_id": 57,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 79615,
+    "timestamp": "2026-09-02T23:15:02",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.82,
+      "cumulative_error": 0.9327
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 79616,
+      "n_drifts": 57,
+      "window_size": 64.0,
+      "estimation": 0.71875
+    }
+  },
+  {
+    "event_id": 58,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 82079,
+    "timestamp": "2026-09-02T23:15:03",
+    "model_version": "baseline_v1",
+    "window_size": 128.0,
+    "metric_context": {
+      "rolling_error_500": 0.926,
+      "cumulative_error": 0.9336
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 82080,
+      "n_drifts": 58,
+      "window_size": 128.0,
+      "estimation": 0.734375
+    }
+  },
+  {
+    "event_id": 59,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 82431,
+    "timestamp": "2026-09-02T23:15:03",
+    "model_version": "baseline_v1",
+    "window_size": 160.0,
+    "metric_context": {
+      "rolling_error_500": 0.874,
+      "cumulative_error": 0.9336
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 82432,
+      "n_drifts": 59,
+      "window_size": 160.0,
+      "estimation": 0.9
+    }
+  },
+  {
+    "event_id": 60,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 84735,
+    "timestamp": "2026-09-02T23:15:03",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.906,
+      "cumulative_error": 0.9335
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 84736,
+      "n_drifts": 60,
+      "window_size": 64.0,
+      "estimation": 0.59375
+    }
+  },
+  {
+    "event_id": 61,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 84831,
+    "timestamp": "2026-09-02T23:15:03",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.814,
+      "cumulative_error": 0.9329
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 84832,
+      "n_drifts": 61,
+      "window_size": 64.0,
+      "estimation": 0.59375
+    }
+  },
+  {
+    "event_id": 62,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 85247,
+    "timestamp": "2026-09-02T23:15:04",
+    "model_version": "baseline_v1",
+    "window_size": 224.0,
+    "metric_context": {
+      "rolling_error_500": 0.852,
+      "cumulative_error": 0.9329
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 85248,
+      "n_drifts": 62,
+      "window_size": 224.0,
+      "estimation": 0.90625
+    }
+  },
+  {
+    "event_id": 63,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 87551,
+    "timestamp": "2026-09-02T23:15:04",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.884,
+      "cumulative_error": 0.9331
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 87552,
+      "n_drifts": 63,
+      "window_size": 80.0,
+      "estimation": 0.6125
+    }
+  },
+  {
+    "event_id": 64,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 87807,
+    "timestamp": "2026-09-02T23:15:04",
+    "model_version": "baseline_v1",
+    "window_size": 224.0,
+    "metric_context": {
+      "rolling_error_500": 0.78,
+      "cumulative_error": 0.9325
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 87808,
+      "n_drifts": 64,
+      "window_size": 224.0,
+      "estimation": 0.8169642857142857
+    }
+  },
+  {
+    "event_id": 65,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 90239,
+    "timestamp": "2026-09-02T23:15:05",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.868,
+      "cumulative_error": 0.9328
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 90240,
+      "n_drifts": 65,
+      "window_size": 64.0,
+      "estimation": 0.296875
+    }
+  },
+  {
+    "event_id": 66,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 90399,
+    "timestamp": "2026-09-02T23:15:05",
+    "model_version": "baseline_v1",
+    "window_size": 128.0,
+    "metric_context": {
+      "rolling_error_500": 0.806,
+      "cumulative_error": 0.9325
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 90400,
+      "n_drifts": 66,
+      "window_size": 128.0,
+      "estimation": 0.890625
+    }
+  },
+  {
+    "event_id": 67,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 92959,
+    "timestamp": "2026-09-02T23:15:06",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.888,
+      "cumulative_error": 0.9328
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 92960,
+      "n_drifts": 67,
+      "window_size": 64.0,
+      "estimation": 0.34375
+    }
+  },
+  {
+    "event_id": 68,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 93151,
+    "timestamp": "2026-09-02T23:15:06",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.564,
+      "cumulative_error": 0.9311
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 93152,
+      "n_drifts": 68,
+      "window_size": 64.0,
+      "estimation": 0.375
+    }
+  },
+  {
+    "event_id": 69,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 95615,
+    "timestamp": "2026-09-02T23:15:07",
+    "model_version": "baseline_v1",
+    "window_size": 192.0,
+    "metric_context": {
+      "rolling_error_500": 0.928,
+      "cumulative_error": 0.9312
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 95616,
+      "n_drifts": 69,
+      "window_size": 192.0,
+      "estimation": 0.859375
+    }
+  },
+  {
+    "event_id": 70,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 95807,
+    "timestamp": "2026-09-02T23:15:07",
+    "model_version": "baseline_v1",
+    "window_size": 160.0,
+    "metric_context": {
+      "rolling_error_500": 0.804,
+      "cumulative_error": 0.9306
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 95808,
+      "n_drifts": 70,
+      "window_size": 160.0,
+      "estimation": 0.61875
+    }
+  },
+  {
+    "event_id": 71,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 95999,
+    "timestamp": "2026-09-02T23:15:07",
+    "model_version": "baseline_v1",
+    "window_size": 96.0,
+    "metric_context": {
+      "rolling_error_500": 0.472,
+      "cumulative_error": 0.9289
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 96000,
+      "n_drifts": 71,
+      "window_size": 96.0,
+      "estimation": 0.17708333333333334
+    }
+  },
+  {
+    "event_id": 72,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 98271,
+    "timestamp": "2026-09-02T23:15:08",
+    "model_version": "baseline_v1",
+    "window_size": 1760.0,
+    "metric_context": {
+      "rolling_error_500": 0.91,
+      "cumulative_error": 0.9292
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 98272,
+      "n_drifts": 72,
+      "window_size": 1760.0,
+      "estimation": 0.9392045454545455
+    }
+  },
+  {
+    "event_id": 73,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 98655,
+    "timestamp": "2026-09-02T23:15:08",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.854,
+      "cumulative_error": 0.9289
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 98656,
+      "n_drifts": 73,
+      "window_size": 80.0,
+      "estimation": 0.5125
+    }
+  },
+  {
+    "event_id": 74,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 98975,
+    "timestamp": "2026-09-02T23:15:08",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.328,
+      "cumulative_error": 0.9262
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 98976,
+      "n_drifts": 74,
+      "window_size": 64.0,
+      "estimation": 0.4375
+    }
+  },
+  {
+    "event_id": 75,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 99775,
+    "timestamp": "2026-09-02T23:15:08",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.84,
+      "cumulative_error": 0.9256
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 99776,
+      "n_drifts": 75,
+      "window_size": 64.0,
+      "estimation": 0.34375
+    }
+  },
+  {
+    "event_id": 76,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 101727,
+    "timestamp": "2026-09-02T23:15:09",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.854,
+      "cumulative_error": 0.9248
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 101728,
+      "n_drifts": 76,
+      "window_size": 64.0,
+      "estimation": 0.453125
+    }
+  },
+  {
+    "event_id": 77,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 101919,
+    "timestamp": "2026-09-02T23:15:09",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.546,
+      "cumulative_error": 0.9234
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 101920,
+      "n_drifts": 77,
+      "window_size": 64.0,
+      "estimation": 0.40625
+    }
+  },
+  {
+    "event_id": 78,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 104351,
+    "timestamp": "2026-09-02T23:15:10",
+    "model_version": "baseline_v1",
+    "window_size": 1920.0,
+    "metric_context": {
+      "rolling_error_500": 0.978,
+      "cumulative_error": 0.9243
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 104352,
+      "n_drifts": 78,
+      "window_size": 1920.0,
+      "estimation": 0.9703125
+    }
+  },
+  {
+    "event_id": 79,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 104575,
+    "timestamp": "2026-09-02T23:15:10",
+    "model_version": "baseline_v1",
+    "window_size": 96.0,
+    "metric_context": {
+      "rolling_error_500": 0.892,
+      "cumulative_error": 0.924
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 104576,
+      "n_drifts": 79,
+      "window_size": 96.0,
+      "estimation": 0.5625
+    }
+  },
+  {
+    "event_id": 80,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 104671,
+    "timestamp": "2026-09-02T23:15:10",
+    "model_version": "baseline_v1",
+    "window_size": 56.0,
+    "metric_context": {
+      "rolling_error_500": 0.76,
+      "cumulative_error": 0.9234
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 104672,
+      "n_drifts": 80,
+      "window_size": 56.0,
+      "estimation": 0.48214285714285715
+    }
+  },
+  {
+    "event_id": 81,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 107295,
+    "timestamp": "2026-09-02T23:15:11",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.908,
+      "cumulative_error": 0.9241
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 107296,
+      "n_drifts": 81,
+      "window_size": 64.0,
+      "estimation": 0.53125
+    }
+  },
+  {
+    "event_id": 82,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 107391,
+    "timestamp": "2026-09-02T23:15:11",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.798,
+      "cumulative_error": 0.9236
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 107392,
+      "n_drifts": 82,
+      "window_size": 64.0,
+      "estimation": 0.609375
+    }
+  },
+  {
+    "event_id": 83,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 110015,
+    "timestamp": "2026-09-02T23:15:12",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.9,
+      "cumulative_error": 0.9243
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 110016,
+      "n_drifts": 83,
+      "window_size": 64.0,
+      "estimation": 0.453125
+    }
+  },
+  {
+    "event_id": 84,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 110111,
+    "timestamp": "2026-09-02T23:15:12",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.792,
+      "cumulative_error": 0.9239
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 110112,
+      "n_drifts": 84,
+      "window_size": 64.0,
+      "estimation": 0.625
+    }
+  },
+  {
+    "event_id": 85,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 112831,
+    "timestamp": "2026-09-02T23:15:13",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.896,
+      "cumulative_error": 0.9245
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 112832,
+      "n_drifts": 85,
+      "window_size": 80.0,
+      "estimation": 0.525
+    }
+  },
+  {
+    "event_id": 86,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 112927,
+    "timestamp": "2026-09-02T23:15:13",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.79,
+      "cumulative_error": 0.924
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 112928,
+      "n_drifts": 86,
+      "window_size": 80.0,
+      "estimation": 0.4875
+    }
+  },
+  {
+    "event_id": 87,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 113055,
+    "timestamp": "2026-09-02T23:15:13",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.724,
+      "cumulative_error": 0.9238
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 113056,
+      "n_drifts": 87,
+      "window_size": 80.0,
+      "estimation": 0.5375
+    }
+  },
+  {
+    "event_id": 88,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 115615,
+    "timestamp": "2026-09-02T23:15:14",
+    "model_version": "baseline_v1",
+    "window_size": 320.0,
+    "metric_context": {
+      "rolling_error_500": 0.91,
+      "cumulative_error": 0.9244
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 115616,
+      "n_drifts": 88,
+      "window_size": 320.0,
+      "estimation": 0.871875
+    }
+  },
+  {
+    "event_id": 89,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 115999,
+    "timestamp": "2026-09-02T23:15:14",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.226,
+      "cumulative_error": 0.9215
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 116000,
+      "n_drifts": 89,
+      "window_size": 80.0,
+      "estimation": 0.25
+    }
+  },
+  {
+    "event_id": 90,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 117055,
+    "timestamp": "2026-09-02T23:15:14",
+    "model_version": "baseline_v1",
+    "window_size": 128.0,
+    "metric_context": {
+      "rolling_error_500": 0.918,
+      "cumulative_error": 0.9214
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 117056,
+      "n_drifts": 90,
+      "window_size": 128.0,
+      "estimation": 0.875
+    }
+  },
+  {
+    "event_id": 91,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 118719,
+    "timestamp": "2026-09-02T23:15:15",
+    "model_version": "baseline_v1",
+    "window_size": 224.0,
+    "metric_context": {
+      "rolling_error_500": 0.89,
+      "cumulative_error": 0.9214
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 118720,
+      "n_drifts": 91,
+      "window_size": 224.0,
+      "estimation": 0.8258928571428571
+    }
+  },
+  {
+    "event_id": 92,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 118911,
+    "timestamp": "2026-09-02T23:15:15",
+    "model_version": "baseline_v1",
+    "window_size": 128.0,
+    "metric_context": {
+      "rolling_error_500": 0.564,
+      "cumulative_error": 0.9201
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 118912,
+      "n_drifts": 92,
+      "window_size": 128.0,
+      "estimation": 0.1328125
+    }
+  },
+  {
+    "event_id": 93,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 119583,
+    "timestamp": "2026-09-02T23:15:15",
+    "model_version": "baseline_v1",
+    "window_size": 256.0,
+    "metric_context": {
+      "rolling_error_500": 0.944,
+      "cumulative_error": 0.9202
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 119584,
+      "n_drifts": 93,
+      "window_size": 256.0,
+      "estimation": 0.90625
+    }
+  },
+  {
+    "event_id": 94,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 120447,
+    "timestamp": "2026-09-02T23:15:15",
+    "model_version": "baseline_v1",
+    "window_size": 608.0,
+    "metric_context": {
+      "rolling_error_500": 0.958,
+      "cumulative_error": 0.9204
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 120448,
+      "n_drifts": 94,
+      "window_size": 608.0,
+      "estimation": 0.9391447368421053
+    }
+  },
+  {
+    "event_id": 95,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 121503,
+    "timestamp": "2026-09-02T23:15:16",
+    "model_version": "baseline_v1",
+    "window_size": 160.0,
+    "metric_context": {
+      "rolling_error_500": 0.928,
+      "cumulative_error": 0.9207
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 121504,
+      "n_drifts": 95,
+      "window_size": 160.0,
+      "estimation": 0.79375
+    }
+  },
+  {
+    "event_id": 96,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 121663,
+    "timestamp": "2026-09-02T23:15:16",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.686,
+      "cumulative_error": 0.9198
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 121664,
+      "n_drifts": 96,
+      "window_size": 64.0,
+      "estimation": 0.5625
+    }
+  },
+  {
+    "event_id": 97,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 124319,
+    "timestamp": "2026-09-02T23:15:17",
+    "model_version": "baseline_v1",
+    "window_size": 288.0,
+    "metric_context": {
+      "rolling_error_500": 0.926,
+      "cumulative_error": 0.9203
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 124320,
+      "n_drifts": 97,
+      "window_size": 288.0,
+      "estimation": 0.8854166666666666
+    }
+  },
+  {
+    "event_id": 98,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 124447,
+    "timestamp": "2026-09-02T23:15:17",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.77,
+      "cumulative_error": 0.9198
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 124448,
+      "n_drifts": 98,
+      "window_size": 64.0,
+      "estimation": 0.765625
+    }
+  },
+  {
+    "event_id": 99,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 126271,
+    "timestamp": "2026-09-02T23:15:17",
+    "model_version": "baseline_v1",
+    "window_size": 288.0,
+    "metric_context": {
+      "rolling_error_500": 0.934,
+      "cumulative_error": 0.9202
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 126272,
+      "n_drifts": 99,
+      "window_size": 288.0,
+      "estimation": 0.8958333333333334
+    }
+  },
+  {
+    "event_id": 100,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 127135,
+    "timestamp": "2026-09-02T23:15:17",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.878,
+      "cumulative_error": 0.9201
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 127136,
+      "n_drifts": 100,
+      "window_size": 64.0,
+      "estimation": 0.375
+    }
+  },
+  {
+    "event_id": 101,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 127359,
+    "timestamp": "2026-09-02T23:15:18",
+    "model_version": "baseline_v1",
+    "window_size": 128.0,
+    "metric_context": {
+      "rolling_error_500": 0.486,
+      "cumulative_error": 0.9186
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 127360,
+      "n_drifts": 101,
+      "window_size": 128.0,
+      "estimation": 0.15625
+    }
+  },
+  {
+    "event_id": 102,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 128095,
+    "timestamp": "2026-09-02T23:15:18",
+    "model_version": "baseline_v1",
+    "window_size": 480.0,
+    "metric_context": {
+      "rolling_error_500": 0.926,
+      "cumulative_error": 0.9188
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 128096,
+      "n_drifts": 102,
+      "window_size": 480.0,
+      "estimation": 0.925
+    }
+  },
+  {
+    "event_id": 103,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 128927,
+    "timestamp": "2026-09-02T23:15:18",
+    "model_version": "baseline_v1",
+    "window_size": 256.0,
+    "metric_context": {
+      "rolling_error_500": 0.96,
+      "cumulative_error": 0.919
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 128928,
+      "n_drifts": 103,
+      "window_size": 256.0,
+      "estimation": 0.93359375
+    }
+  },
+  {
+    "event_id": 104,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 129983,
+    "timestamp": "2026-09-02T23:15:18",
+    "model_version": "baseline_v1",
+    "window_size": 288.0,
+    "metric_context": {
+      "rolling_error_500": 0.954,
+      "cumulative_error": 0.9194
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 129984,
+      "n_drifts": 104,
+      "window_size": 288.0,
+      "estimation": 0.9201388888888888
+    }
+  },
+  {
+    "event_id": 105,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 130111,
+    "timestamp": "2026-09-02T23:15:18",
+    "model_version": "baseline_v1",
+    "window_size": 96.0,
+    "metric_context": {
+      "rolling_error_500": 0.846,
+      "cumulative_error": 0.919
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 130112,
+      "n_drifts": 105,
+      "window_size": 96.0,
+      "estimation": 0.4479166666666667
+    }
+  },
+  {
+    "event_id": 106,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 130303,
+    "timestamp": "2026-09-02T23:15:19",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.554,
+      "cumulative_error": 0.918
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 130304,
+      "n_drifts": 106,
+      "window_size": 64.0,
+      "estimation": 0.703125
+    }
+  },
+  {
+    "event_id": 107,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 130527,
+    "timestamp": "2026-09-02T23:15:19",
+    "model_version": "baseline_v1",
+    "window_size": 128.0,
+    "metric_context": {
+      "rolling_error_500": 0.522,
+      "cumulative_error": 0.9179
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 130528,
+      "n_drifts": 107,
+      "window_size": 128.0,
+      "estimation": 0.6953125
+    }
+  },
+  {
+    "event_id": 108,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 131807,
+    "timestamp": "2026-09-02T23:15:19",
+    "model_version": "baseline_v1",
+    "window_size": 768.0,
+    "metric_context": {
+      "rolling_error_500": 0.9,
+      "cumulative_error": 0.9181
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 131808,
+      "n_drifts": 108,
+      "window_size": 768.0,
+      "estimation": 0.9296875
+    }
+  },
+  {
+    "event_id": 109,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 132767,
+    "timestamp": "2026-09-02T23:15:19",
+    "model_version": "baseline_v1",
+    "window_size": 320.0,
+    "metric_context": {
+      "rolling_error_500": 0.814,
+      "cumulative_error": 0.9176
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 132768,
+      "n_drifts": 109,
+      "window_size": 320.0,
+      "estimation": 0.796875
+    }
+  },
+  {
+    "event_id": 110,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 132863,
+    "timestamp": "2026-09-02T23:15:19",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.72,
+      "cumulative_error": 0.9171
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 132864,
+      "n_drifts": 110,
+      "window_size": 80.0,
+      "estimation": 0.3625
+    }
+  },
+  {
+    "event_id": 111,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 134431,
+    "timestamp": "2026-09-02T23:15:20",
+    "model_version": "baseline_v1",
+    "window_size": 192.0,
+    "metric_context": {
+      "rolling_error_500": 0.826,
+      "cumulative_error": 0.9164
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 134432,
+      "n_drifts": 111,
+      "window_size": 192.0,
+      "estimation": 0.7239583333333334
+    }
+  },
+  {
+    "event_id": 112,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 135007,
+    "timestamp": "2026-09-02T23:15:20",
+    "model_version": "baseline_v1",
+    "window_size": 96.0,
+    "metric_context": {
+      "rolling_error_500": 0.09,
+      "cumulative_error": 0.9129
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 135008,
+      "n_drifts": 112,
+      "window_size": 96.0,
+      "estimation": 0.375
+    }
+  },
+  {
+    "event_id": 113,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 135231,
+    "timestamp": "2026-09-02T23:15:20",
+    "model_version": "baseline_v1",
+    "window_size": 96.0,
+    "metric_context": {
+      "rolling_error_500": 0.144,
+      "cumulative_error": 0.9116
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 135232,
+      "n_drifts": 113,
+      "window_size": 96.0,
+      "estimation": 0.1875
+    }
+  },
+  {
+    "event_id": 114,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 135455,
+    "timestamp": "2026-09-02T23:15:20",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.42,
+      "cumulative_error": 0.9112
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 135456,
+      "n_drifts": 114,
+      "window_size": 64.0,
+      "estimation": 0.265625
+    }
+  },
+  {
+    "event_id": 115,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 136991,
+    "timestamp": "2026-09-02T23:15:21",
+    "model_version": "baseline_v1",
+    "window_size": 160.0,
+    "metric_context": {
+      "rolling_error_500": 0.038,
+      "cumulative_error": 0.9011
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 136992,
+      "n_drifts": 115,
+      "window_size": 160.0,
+      "estimation": 0.11875
+    }
+  },
+  {
+    "event_id": 116,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 137119,
+    "timestamp": "2026-09-02T23:15:21",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.166,
+      "cumulative_error": 0.9007
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 137120,
+      "n_drifts": 116,
+      "window_size": 80.0,
+      "estimation": 0.4
+    }
+  },
+  {
+    "event_id": 117,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 139519,
+    "timestamp": "2026-09-02T23:15:22",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.06,
+      "cumulative_error": 0.8855
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 139520,
+      "n_drifts": 117,
+      "window_size": 80.0,
+      "estimation": 0.375
+    }
+  },
+  {
+    "event_id": 118,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 139999,
+    "timestamp": "2026-09-02T23:15:22",
+    "model_version": "baseline_v1",
+    "window_size": 112.0,
+    "metric_context": {
+      "rolling_error_500": 0.62,
+      "cumulative_error": 0.8846
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 140000,
+      "n_drifts": 118,
+      "window_size": 112.0,
+      "estimation": 0.45535714285714285
+    }
+  },
+  {
+    "event_id": 119,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 140255,
+    "timestamp": "2026-09-02T23:15:22",
+    "model_version": "baseline_v1",
+    "window_size": 160.0,
+    "metric_context": {
+      "rolling_error_500": 0.598,
+      "cumulative_error": 0.8841
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 140256,
+      "n_drifts": 119,
+      "window_size": 160.0,
+      "estimation": 0.56875
+    }
+  },
+  {
+    "event_id": 120,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 140639,
+    "timestamp": "2026-09-02T23:15:22",
+    "model_version": "baseline_v1",
+    "window_size": 320.0,
+    "metric_context": {
+      "rolling_error_500": 0.368,
+      "cumulative_error": 0.8826
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 140640,
+      "n_drifts": 120,
+      "window_size": 320.0,
+      "estimation": 0.365625
+    }
+  },
+  {
+    "event_id": 121,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 140831,
+    "timestamp": "2026-09-02T23:15:22",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.34,
+      "cumulative_error": 0.8818
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 140832,
+      "n_drifts": 121,
+      "window_size": 80.0,
+      "estimation": 0.5875
+    }
+  },
+  {
+    "event_id": 122,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 141503,
+    "timestamp": "2026-09-02T23:15:22",
+    "model_version": "baseline_v1",
+    "window_size": 480.0,
+    "metric_context": {
+      "rolling_error_500": 0.378,
+      "cumulative_error": 0.8794
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 141504,
+      "n_drifts": 122,
+      "window_size": 480.0,
+      "estimation": 0.38958333333333334
+    }
+  },
+  {
+    "event_id": 123,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 141919,
+    "timestamp": "2026-09-02T23:15:22",
+    "model_version": "baseline_v1",
+    "window_size": 128.0,
+    "metric_context": {
+      "rolling_error_500": 0.624,
+      "cumulative_error": 0.8787
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 141920,
+      "n_drifts": 123,
+      "window_size": 128.0,
+      "estimation": 0.5390625
+    }
+  },
+  {
+    "event_id": 124,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 143167,
+    "timestamp": "2026-09-02T23:15:23",
+    "model_version": "baseline_v1",
+    "window_size": 96.0,
+    "metric_context": {
+      "rolling_error_500": 0.704,
+      "cumulative_error": 0.8779
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 143168,
+      "n_drifts": 124,
+      "window_size": 96.0,
+      "estimation": 0.4166666666666667
+    }
+  },
+  {
+    "event_id": 125,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 143807,
+    "timestamp": "2026-09-02T23:15:23",
+    "model_version": "baseline_v1",
+    "window_size": 160.0,
+    "metric_context": {
+      "rolling_error_500": 0.62,
+      "cumulative_error": 0.8767
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 143808,
+      "n_drifts": 125,
+      "window_size": 160.0,
+      "estimation": 0.525
+    }
+  },
+  {
+    "event_id": 126,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 143935,
+    "timestamp": "2026-09-02T23:15:23",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.57,
+      "cumulative_error": 0.8763
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 143936,
+      "n_drifts": 126,
+      "window_size": 80.0,
+      "estimation": 0.275
+    }
+  },
+  {
+    "event_id": 127,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 144159,
+    "timestamp": "2026-09-02T23:15:23",
+    "model_version": "baseline_v1",
+    "window_size": 96.0,
+    "metric_context": {
+      "rolling_error_500": 0.312,
+      "cumulative_error": 0.8751
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 144160,
+      "n_drifts": 127,
+      "window_size": 96.0,
+      "estimation": 0.21875
+    }
+  },
+  {
+    "event_id": 128,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 144383,
+    "timestamp": "2026-09-02T23:15:23",
+    "model_version": "baseline_v1",
+    "window_size": 112.0,
+    "metric_context": {
+      "rolling_error_500": 0.384,
+      "cumulative_error": 0.8749
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 144384,
+      "n_drifts": 128,
+      "window_size": 112.0,
+      "estimation": 0.6607142857142857
+    }
+  },
+  {
+    "event_id": 129,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 144543,
+    "timestamp": "2026-09-02T23:15:23",
+    "model_version": "baseline_v1",
+    "window_size": 128.0,
+    "metric_context": {
+      "rolling_error_500": 0.588,
+      "cumulative_error": 0.8747
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 144544,
+      "n_drifts": 129,
+      "window_size": 128.0,
+      "estimation": 0.8203125
+    }
+  },
+  {
+    "event_id": 130,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 145055,
+    "timestamp": "2026-09-02T23:15:23",
+    "model_version": "baseline_v1",
+    "window_size": 112.0,
+    "metric_context": {
+      "rolling_error_500": 0.68,
+      "cumulative_error": 0.8739
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 145056,
+      "n_drifts": 130,
+      "window_size": 112.0,
+      "estimation": 0.49107142857142855
+    }
+  },
+  {
+    "event_id": 131,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 145247,
+    "timestamp": "2026-09-02T23:15:24",
+    "model_version": "baseline_v1",
+    "window_size": 112.0,
+    "metric_context": {
+      "rolling_error_500": 0.522,
+      "cumulative_error": 0.8731
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 145248,
+      "n_drifts": 131,
+      "window_size": 112.0,
+      "estimation": 0.45535714285714285
+    }
+  },
+  {
+    "event_id": 132,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 145407,
+    "timestamp": "2026-09-02T23:15:24",
+    "model_version": "baseline_v1",
+    "window_size": 128.0,
+    "metric_context": {
+      "rolling_error_500": 0.5,
+      "cumulative_error": 0.8729
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 145408,
+      "n_drifts": 132,
+      "window_size": 128.0,
+      "estimation": 0.6171875
+    }
+  },
+  {
+    "event_id": 133,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 146047,
+    "timestamp": "2026-09-02T23:15:24",
+    "model_version": "baseline_v1",
+    "window_size": 96.0,
+    "metric_context": {
+      "rolling_error_500": 0.63,
+      "cumulative_error": 0.872
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 146048,
+      "n_drifts": 133,
+      "window_size": 96.0,
+      "estimation": 0.4375
+    }
+  },
+  {
+    "event_id": 134,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 146591,
+    "timestamp": "2026-09-02T23:15:24",
+    "model_version": "baseline_v1",
+    "window_size": 128.0,
+    "metric_context": {
+      "rolling_error_500": 0.778,
+      "cumulative_error": 0.8716
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 146592,
+      "n_drifts": 134,
+      "window_size": 128.0,
+      "estimation": 0.609375
+    }
+  },
+  {
+    "event_id": 135,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 146719,
+    "timestamp": "2026-09-02T23:15:24",
+    "model_version": "baseline_v1",
+    "window_size": 112.0,
+    "metric_context": {
+      "rolling_error_500": 0.69,
+      "cumulative_error": 0.8713
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 146720,
+      "n_drifts": 135,
+      "window_size": 112.0,
+      "estimation": 0.5892857142857143
+    }
+  },
+  {
+    "event_id": 136,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 146975,
+    "timestamp": "2026-09-02T23:15:24",
+    "model_version": "baseline_v1",
+    "window_size": 96.0,
+    "metric_context": {
+      "rolling_error_500": 0.606,
+      "cumulative_error": 0.8709
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 146976,
+      "n_drifts": 136,
+      "window_size": 96.0,
+      "estimation": 0.46875
+    }
+  },
+  {
+    "event_id": 137,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 147103,
+    "timestamp": "2026-09-02T23:15:24",
+    "model_version": "baseline_v1",
+    "window_size": 96.0,
+    "metric_context": {
+      "rolling_error_500": 0.558,
+      "cumulative_error": 0.8705
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 147104,
+      "n_drifts": 137,
+      "window_size": 96.0,
+      "estimation": 0.5104166666666666
+    }
+  },
+  {
+    "event_id": 138,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 147199,
+    "timestamp": "2026-09-02T23:15:24",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.582,
+      "cumulative_error": 0.8703
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 147200,
+      "n_drifts": 138,
+      "window_size": 80.0,
+      "estimation": 0.55
+    }
+  },
+  {
+    "event_id": 139,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 148191,
+    "timestamp": "2026-09-02T23:15:25",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.048,
+      "cumulative_error": 0.8647
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 148192,
+      "n_drifts": 139,
+      "window_size": 80.0,
+      "estimation": 0.3
+    }
+  },
+  {
+    "event_id": 140,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 148575,
+    "timestamp": "2026-09-02T23:15:25",
+    "model_version": "baseline_v1",
+    "window_size": 160.0,
+    "metric_context": {
+      "rolling_error_500": 0.624,
+      "cumulative_error": 0.8644
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 148576,
+      "n_drifts": 140,
+      "window_size": 160.0,
+      "estimation": 0.65625
+    }
+  },
+  {
+    "event_id": 141,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 148671,
+    "timestamp": "2026-09-02T23:15:25",
+    "model_version": "baseline_v1",
+    "window_size": 80.0,
+    "metric_context": {
+      "rolling_error_500": 0.732,
+      "cumulative_error": 0.8643
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 148672,
+      "n_drifts": 141,
+      "window_size": 80.0,
+      "estimation": 0.775
+    }
+  },
+  {
+    "event_id": 142,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 148927,
+    "timestamp": "2026-09-02T23:15:25",
+    "model_version": "baseline_v1",
+    "window_size": 224.0,
+    "metric_context": {
+      "rolling_error_500": 0.574,
+      "cumulative_error": 0.8636
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 148928,
+      "n_drifts": 142,
+      "window_size": 224.0,
+      "estimation": 0.53125
+    }
+  },
+  {
+    "event_id": 143,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 149247,
+    "timestamp": "2026-09-02T23:15:25",
+    "model_version": "baseline_v1",
+    "window_size": 128.0,
+    "metric_context": {
+      "rolling_error_500": 0.504,
+      "cumulative_error": 0.8628
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 149248,
+      "n_drifts": 143,
+      "window_size": 128.0,
+      "estimation": 0.609375
+    }
+  },
+  {
+    "event_id": 144,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 149791,
+    "timestamp": "2026-09-02T23:15:25",
+    "model_version": "baseline_v1",
+    "window_size": 288.0,
+    "metric_context": {
+      "rolling_error_500": 0.614,
+      "cumulative_error": 0.8619
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 149792,
+      "n_drifts": 144,
+      "window_size": 288.0,
+      "estimation": 0.5625
+    }
+  },
+  {
+    "event_id": 145,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 152031,
+    "timestamp": "2026-09-02T23:15:26",
+    "model_version": "baseline_v1",
+    "window_size": 576.0,
+    "metric_context": {
+      "rolling_error_500": 0.376,
+      "cumulative_error": 0.8557
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 152032,
+      "n_drifts": 145,
+      "window_size": 576.0,
+      "estimation": 0.3888888888888889
+    }
+  },
+  {
+    "event_id": 146,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 152479,
+    "timestamp": "2026-09-02T23:15:26",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.498,
+      "cumulative_error": 0.8548
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 152480,
+      "n_drifts": 146,
+      "window_size": 64.0,
+      "estimation": 0.34375
+    }
+  },
+  {
+    "event_id": 147,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 152575,
+    "timestamp": "2026-09-02T23:15:26",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.524,
+      "cumulative_error": 0.8545
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 152576,
+      "n_drifts": 147,
+      "window_size": 64.0,
+      "estimation": 0.59375
+    }
+  },
+  {
+    "event_id": 148,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 152927,
+    "timestamp": "2026-09-02T23:15:26",
+    "model_version": "baseline_v1",
+    "window_size": 96.0,
+    "metric_context": {
+      "rolling_error_500": 0.708,
+      "cumulative_error": 0.8545
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 152928,
+      "n_drifts": 148,
+      "window_size": 96.0,
+      "estimation": 0.6458333333333334
+    }
+  },
+  {
+    "event_id": 149,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 153087,
+    "timestamp": "2026-09-02T23:15:26",
+    "model_version": "baseline_v1",
+    "window_size": 64.0,
+    "metric_context": {
+      "rolling_error_500": 0.654,
+      "cumulative_error": 0.8539
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 153088,
+      "n_drifts": 149,
+      "window_size": 64.0,
+      "estimation": 0.53125
+    }
+  },
+  {
+    "event_id": 150,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 153535,
+    "timestamp": "2026-09-02T23:15:26",
+    "model_version": "baseline_v1",
+    "window_size": 128.0,
+    "metric_context": {
+      "rolling_error_500": 0.798,
+      "cumulative_error": 0.8537
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 153536,
+      "n_drifts": 150,
+      "window_size": 128.0,
+      "estimation": 0.640625
+    }
+  },
+  {
+    "event_id": 151,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 153727,
+    "timestamp": "2026-09-02T23:15:26",
+    "model_version": "baseline_v1",
+    "window_size": 96.0,
+    "metric_context": {
+      "rolling_error_500": 0.764,
+      "cumulative_error": 0.8536
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 153728,
+      "n_drifts": 151,
+      "window_size": 96.0,
+      "estimation": 0.4791666666666667
+    }
+  },
+  {
+    "event_id": 152,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 154239,
+    "timestamp": "2026-09-02T23:15:27",
+    "model_version": "baseline_v1",
+    "window_size": 192.0,
+    "metric_context": {
+      "rolling_error_500": 0.802,
+      "cumulative_error": 0.8534
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 154240,
+      "n_drifts": 152,
+      "window_size": 192.0,
+      "estimation": 0.7135416666666666
+    }
+  },
+  {
+    "event_id": 153,
+    "event_type": "drift",
+    "detector": "ADWIN",
+    "stream_position": 312447,
+    "timestamp": "2026-09-02T23:16:18",
+    "model_version": "baseline_v1",
+    "window_size": 1280.0,
+    "metric_context": {
+      "rolling_error_500": 0.022,
+      "cumulative_error": 0.4214
+    },
+    "detector_state": {
+      "detector": "ADWIN",
+      "delta": 0.002,
+      "n_seen": 312448,
+      "n_drifts": 153,
+      "window_size": 1280.0,
+      "estimation": 0.00859375
+    }
+  }
+]
