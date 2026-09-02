@@ -1,0 +1,110 @@
+# ADAPT-IDS Default Configuration
+# Adaptive Intrusion Detection Under Concept and Feature Drift
+
+project:
+  name: "ADAPT-IDS"
+  version: "0.1.0"
+
+paths:
+  raw_data: "data/raw"
+  interim_data: "data/interim"
+  processed_data: "data/processed"
+  results: "results"
+  figures: "results/figures"
+  models: "results/models"
+
+dataset:
+  name: "cic_ids_2017"
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  sample_fraction: 1.0
+  max_rows: null
+  chunk_size: 100000
+  timestamp_column: "Timestamp"
+  label_column: "Label"
+
+preprocessing:
+  remove_duplicates: true
+  handle_infinity: true
+  handle_nan: true
+  nan_strategy: "median"
+  drop_constant_features: true
+  constant_threshold: 0.99
+  drop_id_columns: true
+  id_columns:
+    - "Flow ID"
+    - "Source IP"
+    - "Source Port"
+    - "Destination IP"
+    - "Destination Port"
+    - "Protocol"
+
+classification:
+  task: "binary"  # "binary" or "multiclass"
+  positive_label: "ATTACK"
+  binary_mapping:
+    BENIGN: "BENIGN"
+    default: "ATTACK"
+
+evaluation:
+  strategy: "temporal"
+  train_fraction: 0.70
+  validation_fraction: 0.10
+  test_fraction: 0.20
+  window_size: 5000
+  metrics:
+    - "precision"
+    - "recall"
+    - "f1"
+    - "fpr"
+    - "fnr"
+    - "mcc"
+
+models:
+  lightgbm:
+    n_estimators: 200
+    max_depth: 8
+    learning_rate: 0.1
+    num_leaves: 63
+    min_child_samples: 20
+    class_weight: "balanced"
+    n_jobs: -1
+    verbose: -1
+  random_forest:
+    n_estimators: 200
+    max_depth: 20
+    min_samples_split: 5
+    min_samples_leaf: 2
+    class_weight: "balanced"
+    n_jobs: -1
+
+drift:
+  detector: "adwin"
+  adwin:
+    delta: 0.002
+    clock: 32
+    max_buckets: 5
+    min_window_length: 5
+    grace_period: 10
+  monitor_signal: "error_rate"
+  log_dir: "results/drift"
+
+streaming:
+  batch_size: 1000
+  shuffle: false
+
+synthetic_drift:
+  enabled: false
+  type: "sudden"
+  position: 0.60
+  magnitude: 0.3
+  seed: null
+
+experiment:
+  random_seed: 42
+  name: "baseline"
+  description: ""
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
