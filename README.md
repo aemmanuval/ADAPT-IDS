@@ -10,9 +10,34 @@ while reducing unnecessary retraining.
 
 ### 1. Create environment
 
+**Important:** Use Python 3.10, 3.11, or 3.12. Python 3.13+ and 3.14 lack
+prebuilt wheels for `river` and `pyarrow`, causing build failures.
+
+If your system default is 3.13+, create the venv with a specific version:
+
 ```bash
+# Check your version first
+python3 --version
+
+# If 3.13+, use a specific version (install via pyenv, brew, or conda):
+# Option A: pyenv
+pyenv install 3.12.7
+pyenv local 3.12.7
 python3 -m venv .venv
 
+# Option B: conda (create a Python 3.12 env, then use its venv)
+conda create -n adaptids python=3.12 -y
+conda activate adaptids
+
+# Option C: If you already have Python 3.10-3.12 installed
+python3.12 -m venv .venv
+# or
+python3.11 -m venv .venv
+```
+
+Then activate:
+
+```bash
 # Linux/macOS
 source .venv/bin/activate
 
@@ -23,6 +48,7 @@ source .venv/bin/activate
 ### 2. Install dependencies
 
 ```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 pip install -e .
 ```
