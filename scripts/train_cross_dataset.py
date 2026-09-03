@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os; os.environ["OMP_NUM_THREADS"] = "1"; os.environ["OMP_MAX_ACTIVE_LEVELS"] = "1"
 """Cross-dataset training: train on CIC-IDS2017, test on UNSW-NB15 (and vice versa).
 
 Also supports combined training on both datasets for a more robust model.
@@ -147,7 +148,7 @@ def main() -> None:
     results_dir.mkdir(parents=True, exist_ok=True)
 
     print("\n" + "=" * 60)
-    print("  ADAPT-IDS  \u2014  Cross-Dataset Training & Evaluation")
+    print("  ADAPT-IDS  —  Cross-Dataset Training & Evaluation")
     print("=" * 60 + "\n")
 
     # Load UNSW-NB15
@@ -178,7 +179,7 @@ def main() -> None:
 
     cm = np.array(m["confusion_matrix"])
     plot_confusion_matrix(cm, m["confusion_labels"],
-                          title="UNSW-NB15 Internal \u2014 LightGBM",
+                          title="UNSW-NB15 Internal — LightGBM",
                           filename="cm_unsw_internal.png")
 
     # Save the UNSW model for live prediction

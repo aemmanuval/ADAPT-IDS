@@ -17,6 +17,10 @@
 
 set -e
 
+# Fix LightGBM OpenMP segfault on macOS ARM
+export OMP_NUM_THREADS=1
+export OMP_MAX_ACTIVE_LEVELS=1
+
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'

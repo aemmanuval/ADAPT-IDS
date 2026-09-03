@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os; os.environ["OMP_NUM_THREADS"] = "1"; os.environ["OMP_MAX_ACTIVE_LEVELS"] = "1"
 """Run ADWIN drift-detection experiment on temporally ordered test traffic.
 
 Pipeline:

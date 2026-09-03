@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os; os.environ["OMP_NUM_THREADS"] = "1"; os.environ["OMP_MAX_ACTIVE_LEVELS"] = "1"
 """ADAPT-IDS First-Milestone Demo
 
 Single command that demonstrates the full Phase 1 pipeline:
@@ -84,7 +85,7 @@ def main() -> None:
     print("  Adaptive Intrusion Detection Under Concept & Feature Drift")
     print("=" * 60 + "\n")
 
-    # ── Step 1: Verify data ──────────────────────────────────────────
+    # ── Step 1: Verify data ──────────────────────────────────────
     print("[1/7] Verifying dataset...")
     try:
         csv_files = discover_csv_files(raw_dir)
@@ -95,7 +96,7 @@ def main() -> None:
         print("  See: data/README.md for instructions")
         sys.exit(1)
 
-    # ── Step 2: Load & preprocess ────────────────────────────────────
+    # ── Step 2: Load & preprocess ────────────────────────────────
     print("[2/7] Loading and preprocessing...")
     df = load_dataset(
         raw_dir,
@@ -114,7 +115,7 @@ def main() -> None:
     cleaned, report = pipeline.clean(df)
     print(f"  After cleaning: {report.rows_after:,} rows, {report.columns_after} columns")
 
-    # ── Step 3: Temporal split ───────────────────────────────────────
+    # ── Step 3: Temporal split ───────────────────────────────────
     print("[3/7] Temporal split...")
     ts_col = config["dataset"]["timestamp_column"]
     label_col = config["dataset"]["label_column"]
@@ -139,7 +140,7 @@ def main() -> None:
 
     plot_class_distribution(y_train, title="Training Set Class Distribution", filename="demo_class_dist.png")
 
-    # ── Step 4: Train baseline ───────────────────────────────────────
+    # ── Step 4: Train baseline ───────────────────────────────────
     print("[4/7] Training LightGBM baseline...")
     algo = "lightgbm"
     params = config["models"].get(algo, {})
@@ -160,7 +161,7 @@ def main() -> None:
                           title="Demo — Temporal Confusion Matrix",
                           filename="demo_confusion_matrix.png")
 
-    # ── Step 5: Windowed performance ─────────────────────────────────
+    # ── Step 5: Windowed performance ─────────────────────────────
     print("[5/7] Computing windowed performance...")
     window_size = eval_cfg.get("window_size", 5000)
     windowed = compute_windowed_metrics(y_test, y_pred, window_size=window_size, positive_label=positive)
@@ -168,7 +169,7 @@ def main() -> None:
     print(f"  Windows: {len(windowed)}")
     print(f"  F1 range: {min(f1_values):.4f} – {max(f1_values):.4f}")
 
-    # ── Step 6: ADWIN drift detection ────────────────────────────────
+    # ── Step 6: ADWIN drift detection ────────────────────────────
     print("[6/7] Running ADWIN drift detection...")
     detector = create_detector(config["drift"])
     event_logger = DriftEventLogger(root / "results" / "drift")
@@ -208,7 +209,7 @@ def main() -> None:
     if event_logger.count > 10:
         print(f"    ... and {event_logger.count - 10} more")
 
-    # ── Step 7: Visualizations ───────────────────────────────────────
+    # ── Step 7: Visualizations ───────────────────────────────────
     print("[7/7] Generating visualizations...")
     plot_performance_over_time(
         windowed,
