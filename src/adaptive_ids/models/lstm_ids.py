@@ -24,15 +24,20 @@ logger = get_logger("models.lstm")
 
 
 class LSTMNetwork(nn.Module):
-    """Bidirectional LSTM with attention for flow classification."""
+    """Bidirectional LSTM with attention for flow sequence classification.
+
+    Input: (batch, seq_len, features) — a window of consecutive flows.
+    Output: (batch, num_classes) — classification of the last flow in the window.
+    """
 
     def __init__(self, input_size: int, hidden_size: int = 128, num_layers: int = 2,
                  num_classes: int = 2, dropout: float = 0.3) -> None:
         super().__init__()
         self.hidden_size = hidden_size
         self.num_layers = num_layers
+        self.input_size = input_size
 
-        self.batch_norm = nn.BatchNorm1d(input_size)
+        self.input_proj = nn.Linear(input_size, input_size)
         self.lstm = nn.LSTM(
             input_size=input_size,
             hidden_size=hidden_size,
@@ -50,9 +55,7 @@ class LSTMNetwork(nn.Module):
         )
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        x = self.batch_norm(x.squeeze(1))
-        x = x.unsqueeze(1)
-
+        x = self.input_proj(x)
         lstm_out, _ = self.lstm(x)
         attn_weights = torch.softmax(self.attention(lstm_out), dim=1)
         context = torch.sum(attn_weights * lstm_out, dim=1)
@@ -60,7 +63,12 @@ class LSTMNetwork(nn.Module):
 
 
 class LSTMClassifier:
-    """Wrapper matching the BaselineIDS interface for drop-in comparison."""
+    """LSTM classifier using windowed flow sequences.
+
+    Groups consecutive flows into windows of *seq_len* timesteps,
+    so the LSTM sees temporal patterns across flows (not just one).
+    The label of the last flow in each window is the prediction target.
+    """
 
     def __init__(
         self,
@@ -69,7 +77,8 @@ class LSTMClassifier:
         dropout: float = 0.3,
         learning_rate: float = 0.001,
         epochs: int = 20,
-        batch_size: int = 1024,
+        batch_size: int = 512,
+        seq_len: int = 16,
         random_seed: int = 42,
     ) -> None:
         self.hidden_size = hidden_size
@@ -78,6 +87,7 @@ class LSTMClassifier:
         self.learning_rate = learning_rate
         self.epochs = epochs
         self.batch_size = batch_size
+        self.seq_len = seq_len
         self.random_seed = random_seed
 
         self.model: LSTMNetwork | None = None
@@ -94,15 +104,32 @@ class LSTMClassifier:
     def algorithm(self) -> str:
         return "lstm"
 
+    def _create_sequences(self, X: np.ndarray, y: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+        """Create overlapping windows of seq_len consecutive flows."""
+        n = len(X)
+        if n <= self.seq_len:
+            padded = np.zeros((self.seq_len, X.shape[1]))
+            padded[-n:] = X
+            return padded[np.newaxis, :, :], y[-1:]
+
+        sequences, labels = [], []
+        for i in range(self.seq_len, n):
+            sequences.append(X[i - self.seq_len:i])
+            labels.append(y[i])
+        return np.array(sequences), np.array(labels)
+
     def fit(self, X: np.ndarray, y: np.ndarray) -> None:
-        logger.info("Training LSTM on %d samples, %d features", X.shape[0], X.shape[1])
+        logger.info("Training LSTM on %d samples, %d features (seq_len=%d)", X.shape[0], X.shape[1], self.seq_len)
 
         X_scaled = self.scaler.fit_transform(X)
         y_enc = self.label_encoder.fit_transform(y)
         num_classes = len(self.label_encoder.classes_)
 
-        X_tensor = torch.FloatTensor(X_scaled).unsqueeze(1)
-        y_tensor = torch.LongTensor(y_enc)
+        X_seq, y_seq = self._create_sequences(X_scaled, y_enc)
+        logger.info("Created %d sequences of length %d", len(X_seq), self.seq_len)
+
+        X_tensor = torch.FloatTensor(X_seq)
+        y_tensor = torch.LongTensor(y_seq)
 
         dataset = TensorDataset(X_tensor, y_tensor)
         loader = DataLoader(dataset, batch_size=self.batch_size, shuffle=True)
@@ -167,9 +194,11 @@ class LSTMClassifier:
         logger.info("LSTM training completed in %.2fs (final acc=%.4f)", self.training_time, acc)
 
     def predict(self, X: np.ndarray) -> np.ndarray:
+        """Predict using windowed sequences. Pads the first seq_len-1 samples."""
         self.model.eval()
         X_scaled = self.scaler.transform(X)
-        X_tensor = torch.FloatTensor(X_scaled).unsqueeze(1).to(self.device)
+        X_seq, _ = self._create_sequences(X_scaled, np.zeros(len(X_scaled)))
+        X_tensor = torch.FloatTensor(X_seq).to(self.device)
 
         with torch.no_grad():
             all_preds = []
@@ -180,7 +209,14 @@ class LSTMClassifier:
                 all_preds.append(predicted.cpu().numpy())
 
         y_enc = np.concatenate(all_preds)
-        return self.label_encoder.inverse_transform(y_enc)
+        y_labels = self.label_encoder.inverse_transform(y_enc)
+
+        if len(y_labels) < len(X):
+            pad_count = len(X) - len(y_labels)
+            majority = self.label_encoder.classes_[0]
+            y_labels = np.concatenate([np.array([majority] * pad_count), y_labels])
+
+        return y_labels
 
     def predict_single(self, x: np.ndarray) -> str:
         return self.predict(x.reshape(1, -1))[0]
@@ -188,7 +224,8 @@ class LSTMClassifier:
     def predict_proba(self, X: np.ndarray) -> np.ndarray:
         self.model.eval()
         X_scaled = self.scaler.transform(X)
-        X_tensor = torch.FloatTensor(X_scaled).unsqueeze(1).to(self.device)
+        X_seq, _ = self._create_sequences(X_scaled, np.zeros(len(X_scaled)))
+        X_tensor = torch.FloatTensor(X_seq).to(self.device)
 
         with torch.no_grad():
             all_probs = []
@@ -206,7 +243,7 @@ class LSTMClassifier:
         data = {
             "model_state": self.model.state_dict() if self.model else None,
             "model_config": {
-                "input_size": self.model.batch_norm.num_features if self.model else 0,
+                "input_size": self.model.input_size if self.model else 0,
                 "hidden_size": self.hidden_size,
                 "num_layers": self.num_layers,
                 "num_classes": len(self.label_encoder.classes_) if hasattr(self.label_encoder, "classes_") else 2,

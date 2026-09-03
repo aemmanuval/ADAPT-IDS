@@ -11,3 +11,10 @@ def set_global_seed(seed: int) -> None:
     """Set seeds for all random number generators used in the project."""
     random.seed(seed)
     np.random.seed(seed)
+    try:
+        import torch
+        torch.manual_seed(seed)
+        if torch.cuda.is_available():
+            torch.cuda.manual_seed_all(seed)
+    except ImportError:
+        pass

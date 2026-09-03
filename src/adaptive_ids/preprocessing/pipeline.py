@@ -19,8 +19,8 @@ from adaptive_ids.utils.logging import get_logger
 logger = get_logger("preprocessing")
 
 LEAKAGE_RISK_COLUMNS = [
-    "Flow ID", "Source IP", "Source Port",
-    "Destination IP", "Destination Port", "Protocol",
+    "Flow ID", "Source IP",
+    "Destination IP",
 ]
 
 
@@ -71,6 +71,8 @@ class PreprocessingPipeline:
         self.feature_columns: list[str] = []
         self.label_encoder: LabelEncoder | None = None
         self._is_fitted = False
+        self._fitted_medians: dict[str, float] = {}
+        self._fitted_drop_cols: list[str] = []
 
     def clean(self, df: pd.DataFrame) -> tuple[pd.DataFrame, PreprocessingReport]:
         """Apply cleaning steps that are safe before train/test split.
@@ -111,11 +113,16 @@ class PreprocessingPipeline:
     ) -> tuple[pd.DataFrame, np.ndarray, np.ndarray]:
         """Fit on training data and return (features_df, X, y).
 
-        Learns scaler parameters and feature column list.
+        Learns scaler parameters, median values for imputation,
+        constant columns to drop, and feature column list.
         """
-        df, _ = self._ensure_clean(df)
-        X_df, y = self._separate_features_label(df)
+        df, report = self.clean(df)
 
+        numeric = df.select_dtypes(include="number")
+        self._fitted_medians = {col: float(df[col].median()) for col in numeric.columns if df[col].isna().sum() > 0}
+        self._fitted_drop_cols = report.columns_dropped_constant + report.columns_dropped_id
+
+        X_df, y = self._separate_features_label(df)
         self.feature_columns = list(X_df.columns)
 
         if scale:
@@ -130,11 +137,36 @@ class PreprocessingPipeline:
     def transform(
         self, df: pd.DataFrame, *, scale: bool = False
     ) -> tuple[pd.DataFrame, np.ndarray, np.ndarray]:
-        """Transform new data using already-fitted state."""
+        """Transform new data using already-fitted state.
+
+        Uses training medians for NaN imputation (no test-set leakage).
+        """
         if not self._is_fitted:
             raise RuntimeError("Pipeline not fitted. Call fit_transform first.")
 
-        df, _ = self._ensure_clean(df)
+        df = df.copy()
+        df.columns = df.columns.str.strip()
+
+        if self.label_column not in df.columns:
+            for candidate in [" Label", "label", " label"]:
+                if candidate in df.columns:
+                    df.rename(columns={candidate: self.label_column}, inplace=True)
+                    break
+
+        df = self._map_labels(df, PreprocessingReport())
+        df = self._handle_infinity(df, PreprocessingReport())
+
+        for col, med in self._fitted_medians.items():
+            if col in df.columns:
+                df[col] = df[col].fillna(med)
+        df = df.dropna(subset=df.select_dtypes(include="number").columns, how="any")
+
+        drop_cols = [c for c in self._fitted_drop_cols if c in df.columns]
+        df = df.drop(columns=drop_cols, errors="ignore")
+
+        if self.pp_cfg.get("remove_duplicates", True):
+            df = df.drop_duplicates()
+
         X_df, y = self._separate_features_label(df)
 
         missing = set(self.feature_columns) - set(X_df.columns)
@@ -151,9 +183,6 @@ class PreprocessingPipeline:
             X = X_df.values.astype(np.float64)
 
         return X_df, X, y
-
-    def _ensure_clean(self, df: pd.DataFrame) -> tuple[pd.DataFrame, PreprocessingReport]:
-        return self.clean(df)
 
     def _map_labels(self, df: pd.DataFrame, report: PreprocessingReport) -> pd.DataFrame:
         if self.label_column not in df.columns:

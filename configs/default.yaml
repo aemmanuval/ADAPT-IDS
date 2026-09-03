@@ -34,10 +34,7 @@ preprocessing:
   id_columns:
     - "Flow ID"
     - "Source IP"
-    - "Source Port"
     - "Destination IP"
-    - "Destination Port"
-    - "Protocol"
 
 classification:
   task: "binary"  # "binary" or "multiclass"

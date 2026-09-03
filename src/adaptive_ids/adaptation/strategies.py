@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import time
 from abc import ABC, abstractmethod
+from collections import deque
 from typing import Any
 
 import numpy as np
@@ -152,8 +153,8 @@ class AdaptiveModelManager:
         self.random_seed = random_seed
 
         self.model: BaselineIDS | None = None
-        self._X_buffer: list[np.ndarray] = []
-        self._y_buffer: list[str] = []
+        self._X_buffer: deque[np.ndarray] = deque(maxlen=window_size)
+        self._y_buffer: deque[str] = deque(maxlen=window_size)
         self._retrain_log: list[dict[str, Any]] = []
         self._total_retrain_time: float = 0.0
 
@@ -176,9 +177,6 @@ class AdaptiveModelManager:
 
         self._X_buffer.append(x)
         self._y_buffer.append(y_true)
-        if len(self._X_buffer) > self.window_size:
-            self._X_buffer.pop(0)
-            self._y_buffer.pop(0)
 
         self.detector.update(error)
         drift = self.detector.drift_detected()
