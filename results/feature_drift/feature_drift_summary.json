@@ -1,0 +1,57 @@
+{
+  "n_features_analyzed": 64,
+  "n_significant_drift": 64,
+  "pct_features_drifted": 100.0,
+  "top_drifted_features": [
+    {
+      "feature": "Idle Max",
+      "ks_statistic": 0.252236,
+      "relative_shift": 3.8984
+    },
+    {
+      "feature": "Flow IAT Max",
+      "ks_statistic": 0.252072,
+      "relative_shift": 3.4204
+    },
+    {
+      "feature": "Fwd IAT Max",
+      "ks_statistic": 0.251282,
+      "relative_shift": 3.5501
+    },
+    {
+      "feature": "Idle Mean",
+      "ks_statistic": 0.250116,
+      "relative_shift": 4.309
+    },
+    {
+      "feature": "Idle Min",
+      "ks_statistic": 0.24997,
+      "relative_shift": 4.8556
+    },
+    {
+      "feature": "Fwd IAT Std",
+      "ks_statistic": 0.248922,
+      "relative_shift": 4.9302
+    },
+    {
+      "feature": "Flow IAT Std",
+      "ks_statistic": 0.241767,
+      "relative_shift": 2.7249
+    },
+    {
+      "feature": "Flow Packets/s",
+      "ks_statistic": 0.239784,
+      "relative_shift": 0.4063
+    },
+    {
+      "feature": "Flow IAT Mean",
+      "ks_statistic": 0.239275,
+      "relative_shift": 1.4536
+    },
+    {
+      "feature": "Fwd IAT Mean",
+      "ks_statistic": 0.238357,
+      "relative_shift": 1.446
+    }
+  ]
+}
