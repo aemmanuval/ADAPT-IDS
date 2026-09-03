@@ -47,6 +47,7 @@ app.add_middleware(
 
 _model = None
 _detector = None
+_storage = None
 _drift_events: list[dict] = []
 _stats = {"predictions": 0, "attacks_detected": 0, "drift_events": 0, "start_time": time.time()}
 
@@ -102,7 +103,35 @@ def load_model(model_path: str | Path | None = None):
 
 @app.on_event("startup")
 async def startup():
+    global _storage
     load_model()
+    try:
+        from adaptive_ids.storage.mongo import MongoStorage
+        _storage = MongoStorage()
+        if not _storage.connect():
+            _storage = None
+    except Exception:
+        _storage = None
+
+
+@app.get("/")
+async def root():
+    return {
+        "service": "ADAPT-IDS API",
+        "version": "0.1.0",
+        "docs": "/docs",
+        "endpoints": ["/predict", "/predict/batch", "/health", "/model/info", "/drift/status", "/drift/events", "/attacks"],
+    }
+
+
+@app.get("/attacks")
+async def get_attacks(limit: int = 50):
+    """Get recent attack detections from MongoDB."""
+    if _storage and _storage.connected:
+        attacks = _storage.get_recent_attacks(limit)
+        stats = _storage.get_attack_stats()
+        return {"attacks": attacks, "stats": stats}
+    return {"attacks": list(_drift_events[-limit:]), "stats": _stats, "source": "in-memory"}
 
 
 @app.get("/health")
@@ -143,6 +172,11 @@ async def predict(flow: FlowFeatures):
     _stats["predictions"] += 1
     if prediction == "ATTACK":
         _stats["attacks_detected"] += 1
+        if _storage and _storage.connected:
+            _storage.log_attack(confidence=confidence)
+
+    if _storage and _storage.connected:
+        _storage.log_prediction(prediction=prediction, confidence=confidence)
 
     return PredictionResponse(
         prediction=prediction,

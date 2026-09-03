@@ -39,3 +39,5 @@ scipy>=1.12,<2.0
 torch>=2.0
 fastapi>=0.100
 uvicorn>=0.20
+pymongo>=4.0
+scapy>=2.5
