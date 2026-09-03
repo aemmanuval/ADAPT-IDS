@@ -33,3 +33,7 @@ ipykernel>=6.0
 # Data formats
 pyarrow>=15.0,<20.0
 streamlit
+scipy>=1.12,<2.0
+
+# Deep learning (optional, CPU-only)
+torch>=2.0
