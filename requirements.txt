@@ -37,3 +37,5 @@ scipy>=1.12,<2.0
 
 # Deep learning (optional, CPU-only)
 torch>=2.0
+fastapi>=0.100
+uvicorn>=0.20

@@ -256,6 +256,52 @@ class PageHinkleyDetector(DriftDetector):
         return {"detector": self.name, "n_seen": self._n_seen, "n_drifts": self._n_drifts}
 
 
+class UnsupervisedDriftDetector(DriftDetector):
+    """Feature-distribution drift detector that does NOT require ground-truth labels.
+
+    Monitors the prediction confidence distribution using ADWIN.
+    When the model's confidence changes significantly, drift is signalled.
+    This works in production where labels are unavailable.
+    """
+
+    def __init__(self, delta: float = 0.002) -> None:
+        from river.drift import ADWIN
+        self._adwin = ADWIN(delta=delta)
+        self.delta = delta
+        self._drift = False
+        self._n_seen = 0
+        self._n_drifts = 0
+
+    @property
+    def name(self) -> str:
+        return "UnsupervisedADWIN"
+
+    def update(self, value: float) -> None:
+        """Feed prediction confidence (0-1) instead of error signal."""
+        self._n_seen += 1
+        self._adwin.update(value)
+        self._drift = self._adwin.drift_detected
+        if self._drift:
+            self._n_drifts += 1
+
+    def drift_detected(self) -> bool:
+        return self._drift
+
+    def warning_detected(self) -> bool:
+        return False
+
+    def reset(self) -> None:
+        from river.drift import ADWIN
+        self._adwin = ADWIN(delta=self.delta)
+        self._drift = False
+        self._n_seen = 0
+        self._n_drifts = 0
+
+    def get_state(self) -> dict[str, Any]:
+        return {"detector": self.name, "n_seen": self._n_seen, "n_drifts": self._n_drifts,
+                "window_size": self._adwin.width, "estimation": self._adwin.estimation}
+
+
 def create_detector(config: dict[str, Any]) -> DriftDetector:
     """Factory: build a drift detector from configuration."""
     name = config.get("detector", "adwin").lower()
@@ -269,8 +315,10 @@ def create_detector(config: dict[str, Any]) -> DriftDetector:
         return EDDMDetector()
     elif name in ("page_hinkley", "pagehinkley", "ph"):
         return PageHinkleyDetector()
+    elif name in ("unsupervised", "unsupervised_adwin", "confidence"):
+        return UnsupervisedDriftDetector()
     else:
         raise ValueError(
             f"Unknown drift detector: {name}. "
-            f"Supported: adwin, ddm, eddm, page_hinkley"
+            f"Supported: adwin, ddm, eddm, page_hinkley, unsupervised"
         )
