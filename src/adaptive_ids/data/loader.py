@@ -51,13 +51,20 @@ def load_single_csv(
     """
     logger.info("Loading %s (max_rows=%s, sample=%.2f)", path.name, max_rows, sample_fraction)
 
-    if max_rows and max_rows < chunk_size:
-        df = pd.read_csv(path, nrows=max_rows, encoding="utf-8", low_memory=False)
-    elif sample_fraction < 1.0:
-        df = pd.read_csv(path, encoding="utf-8", low_memory=False)
-        df = df.sample(frac=sample_fraction, random_state=random_seed)
-    else:
-        df = pd.read_csv(path, encoding="utf-8", low_memory=False)
+    for encoding in ["utf-8", "latin-1", "cp1252"]:
+        try:
+            if max_rows and max_rows < chunk_size:
+                df = pd.read_csv(path, nrows=max_rows, encoding=encoding, low_memory=False)
+            elif sample_fraction < 1.0:
+                df = pd.read_csv(path, encoding=encoding, low_memory=False)
+                df = df.sample(frac=sample_fraction, random_state=random_seed)
+            else:
+                df = pd.read_csv(path, encoding=encoding, low_memory=False)
+            break
+        except UnicodeDecodeError:
+            if encoding == "cp1252":
+                raise
+            continue
 
     df.columns = df.columns.str.strip()
     logger.info("Loaded %d rows, %d columns from %s", len(df), len(df.columns), path.name)
