@@ -1,0 +1,55 @@
+{
+  "accuracy": 0.06292,
+  "precision": 1.0,
+  "recall": 0.0001493779475470007,
+  "f1": 0.0002987112742169497,
+  "mcc": 0.0030625578596151933,
+  "confusion_matrix": [
+    [
+      7,
+      46854
+    ],
+    [
+      0,
+      3139
+    ]
+  ],
+  "confusion_labels": [
+    "ATTACK",
+    "BENIGN"
+  ],
+  "fpr": 0.0,
+  "fnr": 0.999850622052453,
+  "tp": 7,
+  "fp": 0,
+  "fn": 46854,
+  "tn": 3139,
+  "support": 50000,
+  "class_report": {
+    "ATTACK": {
+      "precision": 1.0,
+      "recall": 0.0001493779475470007,
+      "f1-score": 0.0002987112742169497,
+      "support": 46861.0
+    },
+    "BENIGN": {
+      "precision": 0.0627887904306603,
+      "recall": 1.0,
+      "f1-score": 0.11815854852066551,
+      "support": 3139.0
+    },
+    "accuracy": 0.06292,
+    "macro avg": {
+      "precision": 0.5313943952153302,
+      "recall": 0.5000746889737735,
+      "f1-score": 0.05922862989744123,
+      "support": 50000.0
+    },
+    "weighted avg": {
+      "precision": 0.9411618802632368,
+      "recall": 0.06292,
+      "f1-score": 0.007697951856548991,
+      "support": 50000.0
+    }
+  }
+}
