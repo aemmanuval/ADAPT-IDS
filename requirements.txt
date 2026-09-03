@@ -32,3 +32,4 @@ ipykernel>=6.0
 
 # Data formats
 pyarrow>=15.0,<20.0
+streamlit
