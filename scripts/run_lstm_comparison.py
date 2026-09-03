@@ -51,7 +51,7 @@ def main(config_path: str | None = None) -> None:
         sys.exit(1)
 
     print("\n" + "=" * 60)
-    print("  ADAPT-IDS  —  LSTM vs LightGBM Comparison")
+    print("  ADAPT-IDS  \u2014  LSTM vs LightGBM Comparison")
     print("=" * 60 + "\n")
 
     df = pd.read_parquet(data_path)
@@ -73,6 +73,9 @@ def main(config_path: str | None = None) -> None:
 
     pipeline = PreprocessingPipeline(config)
 
+    max_train = 200000
+    max_test = 50000
+
     all_results = {}
 
     for split_name, splits in [("random", random_splits), ("temporal", temporal_splits)]:
@@ -80,8 +83,15 @@ def main(config_path: str | None = None) -> None:
         print(f"  Split: {split_name}")
         print(f"{'='*40}")
 
-        _, X_train, y_train = pipeline.fit_transform(splits["train"])
-        _, X_test, y_test = pipeline.transform(splits["test"])
+        train_subset = splits["train"]
+        test_subset = splits["test"]
+        if len(train_subset) > max_train:
+            train_subset = train_subset.sample(n=max_train, random_state=seed)
+        if len(test_subset) > max_test:
+            test_subset = test_subset.head(max_test)
+
+        _, X_train, y_train = pipeline.fit_transform(train_subset)
+        _, X_test, y_test = pipeline.transform(test_subset)
 
         print(f"Train: {X_train.shape[0]:,} | Test: {X_test.shape[0]:,} | Features: {X_train.shape[1]}")
 
@@ -126,12 +136,12 @@ def main(config_path: str | None = None) -> None:
 
             cm = np.array(metrics["confusion_matrix"])
             plot_confusion_matrix(cm, metrics["confusion_labels"],
-                                  title=f"{model_name} — {split_name} split",
+                                  title=f"{model_name} \u2014 {split_name} split",
                                   filename=f"cm_{key}.png")
 
             plot_performance_over_time(
                 windowed, metric_name="f1",
-                title=f"F1 Over Time — {model_name} ({split_name})",
+                title=f"F1 Over Time \u2014 {model_name} ({split_name})",
                 filename=f"f1_time_{key}.png",
             )
 
