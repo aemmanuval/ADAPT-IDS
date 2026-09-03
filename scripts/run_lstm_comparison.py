@@ -7,8 +7,12 @@ Answers: does deep learning improve detection under drift?
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
+
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["OMP_MAX_ACTIVE_LEVELS"] = "1"
 
 import numpy as np
 import pandas as pd
@@ -95,8 +99,9 @@ def main(config_path: str | None = None) -> None:
 
         print(f"Train: {X_train.shape[0]:,} | Test: {X_test.shape[0]:,} | Features: {X_train.shape[1]}")
 
+        lgbm_params = {**config["models"].get("lightgbm", {}), "n_jobs": 1, "num_threads": 1}
         models = {
-            "lightgbm": BaselineIDS("lightgbm", params=config["models"].get("lightgbm", {}), random_seed=seed),
+            "lightgbm": BaselineIDS("lightgbm", params=lgbm_params, random_seed=seed),
             "lstm": LSTMClassifier(
                 hidden_size=128, num_layers=2, dropout=0.3,
                 learning_rate=0.001, epochs=15, batch_size=1024,
