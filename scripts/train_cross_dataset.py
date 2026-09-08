@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import os; os.environ["OMP_NUM_THREADS"] = "1"; os.environ["OMP_MAX_ACTIVE_LEVELS"] = "1"
 """Cross-dataset training: train on CIC-IDS2017, test on UNSW-NB15 (and vice versa).
 
 Also supports combined training on both datasets for a more robust model.
@@ -10,6 +9,8 @@ Usage:
 """
 
 from __future__ import annotations
+
+import os; os.environ["OMP_NUM_THREADS"] = "1"; os.environ["OMP_MAX_ACTIVE_LEVELS"] = "1"
 
 import argparse
 import json

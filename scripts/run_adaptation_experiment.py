@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import os; os.environ["OMP_NUM_THREADS"] = "1"; os.environ["OMP_MAX_ACTIVE_LEVELS"] = "1"
 """Phase 2-3: Compare adaptation strategies under temporal drift.
 
 Runs the same temporal test stream through three strategies:
@@ -11,6 +10,8 @@ Measures F1-over-time, total retrains, and adaptation cost for each.
 """
 
 from __future__ import annotations
+
+import os; os.environ["OMP_NUM_THREADS"] = "1"; os.environ["OMP_MAX_ACTIVE_LEVELS"] = "1"
 
 import json
 import sys
