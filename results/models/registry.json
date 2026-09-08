@@ -1,0 +1,161 @@
+[
+  {
+    "model_id": "lightgbm_baseline_v1",
+    "model_path": "/Users/austin/Documents/Projects/Abino's Prject/ADAPT-IDS/results/baseline/lightgbm/lightgbm_baseline.joblib",
+    "registered_at": "2026-09-08T08:55:11",
+    "algorithm": "lightgbm",
+    "params": {
+      "n_estimators": 200,
+      "max_depth": 8,
+      "learning_rate": 0.1,
+      "num_leaves": 63,
+      "min_child_samples": 20,
+      "class_weight": "balanced",
+      "n_jobs": 1,
+      "num_threads": 1,
+      "verbose": -1
+    },
+    "random_seed": 42,
+    "training_samples": 2264202,
+    "n_features": 68,
+    "training_time_s": 35.672,
+    "classes": [
+      "ATTACK",
+      "BENIGN"
+    ],
+    "split": "random",
+    "metrics": {
+      "accuracy": 0.9997721053403316,
+      "precision": 0.9990592240838635,
+      "recall": 0.999784809332102,
+      "f1": 0.9994218850133774,
+      "mcc": 0.9992800671989219,
+      "confusion_matrix": [
+        [
+          111505,
+          24
+        ],
+        [
+          105,
+          454417
+        ]
+      ],
+      "confusion_labels": [
+        "ATTACK",
+        "BENIGN"
+      ],
+      "fpr": 0.0002310119202150831,
+      "fnr": 0.0002151906678980355,
+      "tp": 111505,
+      "fp": 105,
+      "fn": 24,
+      "tn": 454417,
+      "support": 566051,
+      "class_report": {
+        "ATTACK": {
+          "precision": 0.9990592240838635,
+          "recall": 0.999784809332102,
+          "f1-score": 0.9994218850133774,
+          "support": 111529.0
+        },
+        "BENIGN": {
+          "precision": 0.9999471878637711,
+          "recall": 0.9997689880797849,
+          "f1-score": 0.9998580800318605,
+          "support": 454522.0
+        },
+        "accuracy": 0.9997721053403316,
+        "macro avg": {
+          "precision": 0.9995032059738174,
+          "recall": 0.9997768987059434,
+          "f1-score": 0.999639982522619,
+          "support": 566051.0
+        },
+        "weighted avg": {
+          "precision": 0.9997722324049709,
+          "recall": 0.9997721053403316,
+          "f1-score": 0.9997721365493537,
+          "support": 566051.0
+        }
+      }
+    }
+  },
+  {
+    "model_id": "random_forest_baseline_v1",
+    "model_path": "/Users/austin/Documents/Projects/Abino's Prject/ADAPT-IDS/results/baseline/random_forest/random_forest_baseline.joblib",
+    "registered_at": "2026-09-08T09:07:20",
+    "algorithm": "random_forest",
+    "params": {
+      "n_estimators": 200,
+      "max_depth": 20,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "class_weight": "balanced",
+      "n_jobs": 1
+    },
+    "random_seed": 42,
+    "training_samples": 2264202,
+    "n_features": 68,
+    "training_time_s": 719.189,
+    "classes": [
+      "ATTACK",
+      "BENIGN"
+    ],
+    "split": "random",
+    "metrics": {
+      "accuracy": 0.9992138517554072,
+      "precision": 0.9963538873994638,
+      "recall": 0.9996682477203238,
+      "f1": 0.9980083158408264,
+      "mcc": 0.9975207269960102,
+      "confusion_matrix": [
+        [
+          111492,
+          37
+        ],
+        [
+          408,
+          454114
+        ]
+      ],
+      "confusion_labels": [
+        "ATTACK",
+        "BENIGN"
+      ],
+      "fpr": 0.0008976463185500371,
+      "fnr": 0.00033175227967613803,
+      "tp": 111492,
+      "fp": 408,
+      "fn": 37,
+      "tn": 454114,
+      "support": 566051,
+      "class_report": {
+        "ATTACK": {
+          "precision": 0.9963538873994638,
+          "recall": 0.9996682477203238,
+          "f1-score": 0.9980083158408264,
+          "support": 111529.0
+        },
+        "BENIGN": {
+          "precision": 0.9999185292997264,
+          "recall": 0.99910235368145,
+          "f1-score": 0.9995102748733593,
+          "support": 454522.0
+        },
+        "accuracy": 0.9992138517554072,
+        "macro avg": {
+          "precision": 0.998136208349595,
+          "recall": 0.9993853007008868,
+          "f1-score": 0.9987592953570928,
+          "support": 566051.0
+        },
+        "weighted avg": {
+          "precision": 0.999216188085782,
+          "recall": 0.9992138517554072,
+          "f1-score": 0.9992143439608808,
+          "support": 566051.0
+        }
+      }
+    }
+  }
+]

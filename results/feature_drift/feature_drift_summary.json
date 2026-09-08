@@ -1,57 +1,57 @@
 {
-  "n_features_analyzed": 64,
-  "n_significant_drift": 64,
+  "n_features_analyzed": 68,
+  "n_significant_drift": 68,
   "pct_features_drifted": 100.0,
   "top_drifted_features": [
     {
-      "feature": "Idle Max",
-      "ks_statistic": 0.252236,
-      "relative_shift": 3.8984
+      "feature": "min_seg_size_forward",
+      "ks_statistic": 0.222535,
+      "relative_shift": 1.0065
     },
     {
-      "feature": "Flow IAT Max",
-      "ks_statistic": 0.252072,
-      "relative_shift": 3.4204
+      "feature": "act_data_pkt_fwd",
+      "ks_statistic": 0.202065,
+      "relative_shift": 0.1944
     },
     {
-      "feature": "Fwd IAT Max",
-      "ks_statistic": 0.251282,
-      "relative_shift": 3.5501
+      "feature": "Fwd Packet Length Max",
+      "ks_statistic": 0.191663,
+      "relative_shift": 0.7965
     },
     {
-      "feature": "Idle Mean",
-      "ks_statistic": 0.250116,
-      "relative_shift": 4.309
+      "feature": "Avg Fwd Segment Size",
+      "ks_statistic": 0.190679,
+      "relative_shift": 1.0032
     },
     {
-      "feature": "Idle Min",
-      "ks_statistic": 0.24997,
-      "relative_shift": 4.8556
+      "feature": "Fwd Packet Length Mean",
+      "ks_statistic": 0.190679,
+      "relative_shift": 1.0032
     },
     {
-      "feature": "Fwd IAT Std",
-      "ks_statistic": 0.248922,
-      "relative_shift": 4.9302
+      "feature": "Total Length of Bwd Packets",
+      "ks_statistic": 0.164162,
+      "relative_shift": 0.1577
     },
     {
-      "feature": "Flow IAT Std",
-      "ks_statistic": 0.241767,
-      "relative_shift": 2.7249
+      "feature": "Subflow Bwd Bytes",
+      "ks_statistic": 0.164162,
+      "relative_shift": 0.1575
     },
     {
-      "feature": "Flow Packets/s",
-      "ks_statistic": 0.239784,
-      "relative_shift": 0.4063
+      "feature": "Total Length of Fwd Packets",
+      "ks_statistic": 0.160162,
+      "relative_shift": 0.3419
     },
     {
-      "feature": "Flow IAT Mean",
-      "ks_statistic": 0.239275,
-      "relative_shift": 1.4536
+      "feature": "Subflow Fwd Bytes",
+      "ks_statistic": 0.160162,
+      "relative_shift": 0.342
     },
     {
-      "feature": "Fwd IAT Mean",
-      "ks_statistic": 0.238357,
-      "relative_shift": 1.446
+      "feature": "Average Packet Size",
+      "ks_statistic": 0.156897,
+      "relative_shift": 0.7332
     }
   ]
 }

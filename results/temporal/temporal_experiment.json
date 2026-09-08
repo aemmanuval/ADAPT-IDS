@@ -1,12 +1,23 @@
 {
-  "experiment_id": "exp_1788371057",
-  "timestamp": "2026-09-02T23:14:17",
+  "experiment_id": "exp_1788839125",
+  "timestamp": "2026-09-08T09:15:25",
   "experiment_name": "temporal_evaluation",
   "seed": 42,
   "split": "temporal",
   "train_fraction": 0.7,
   "test_fraction": 0.2,
   "temporal_info": {
-    "available": false
+    "available": true,
+    "min": "2017-04-07 01:00:00",
+    "max": "2017-07-07 12:59:00",
+    "duration": "91 days 11:59:00",
+    "n_valid": 2300410,
+    "n_invalid": 529843,
+    "unique_dates": [
+      "2017-04-07",
+      "2017-05-07",
+      "2017-06-07",
+      "2017-07-07"
+    ]
   }
 }
