@@ -248,6 +248,7 @@ class LSTMClassifier:
                 "num_layers": self.num_layers,
                 "num_classes": len(self.label_encoder.classes_) if hasattr(self.label_encoder, "classes_") else 2,
                 "dropout": self.dropout,
+                "seq_len": self.seq_len,
             },
             "label_encoder": self.label_encoder,
             "scaler": self.scaler,
@@ -270,6 +271,11 @@ class LSTMClassifier:
         obj.hidden_size = cfg["hidden_size"]
         obj.num_layers = cfg["num_layers"]
         obj.dropout = cfg["dropout"]
+        obj.seq_len = cfg.get("seq_len", 16)
+        obj.learning_rate = data["metadata"].get("learning_rate", 0.001)
+        obj.epochs = data["metadata"].get("epochs", 20)
+        obj.random_seed = data["metadata"].get("random_seed", 42)
+        obj.training_time = data["metadata"].get("training_time_s", 0.0)
 
         obj.model = LSTMNetwork(
             input_size=cfg["input_size"],
