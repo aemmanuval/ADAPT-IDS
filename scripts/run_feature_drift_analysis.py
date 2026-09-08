@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import os; os.environ["OMP_NUM_THREADS"] = "1"; os.environ["OMP_MAX_ACTIVE_LEVELS"] = "1"
 """Phase 5: Feature drift analysis — statistical tests on distribution changes.
 
 Compares feature distributions between temporal windows using:
@@ -9,6 +8,8 @@ Compares feature distributions between temporal windows using:
 """
 
 from __future__ import annotations
+
+import os; os.environ["OMP_NUM_THREADS"] = "1"; os.environ["OMP_MAX_ACTIVE_LEVELS"] = "1"
 
 import json
 import sys

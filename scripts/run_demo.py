@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import os; os.environ["OMP_NUM_THREADS"] = "1"; os.environ["OMP_MAX_ACTIVE_LEVELS"] = "1"
 """ADAPT-IDS First-Milestone Demo
 
 Single command that demonstrates the full Phase 1 pipeline:
@@ -16,6 +15,8 @@ Usage:
 """
 
 from __future__ import annotations
+
+import os; os.environ["OMP_NUM_THREADS"] = "1"; os.environ["OMP_MAX_ACTIVE_LEVELS"] = "1"
 
 import argparse
 import json
