@@ -13,11 +13,18 @@ Requirements:
   - MongoDB running locally (optional — falls back to console logging)
   - Trained model in results/
 
-Usage:
-    sudo python scripts/live_monitor.py                     # auto-detect interface
-    sudo python scripts/live_monitor.py --interface en0      # specific interface
-    sudo python scripts/live_monitor.py --interface eth0 --duration 300  # 5 min capture
-    sudo python scripts/live_monitor.py --mongo mongodb://localhost:27017
+Usage (IMPORTANT — use the full python path so sudo sees your packages):
+
+    macOS / Linux:
+        sudo $(which python) scripts/live_monitor.py
+        sudo $(which python) scripts/live_monitor.py --interface en0
+        sudo $(which python) scripts/live_monitor.py --interface eth0 --duration 300
+
+    Windows (run terminal as Administrator):
+        python scripts/live_monitor.py
+        python scripts/live_monitor.py --interface "Wi-Fi"
+
+    DO NOT use 'sudo python' — it ignores your conda/venv packages.
 """
 
 from __future__ import annotations
@@ -214,6 +221,18 @@ def main():
     args = parse_args()
     setup_logging("INFO")
     logger = get_logger("live_monitor")
+
+    # Check that packages are importable (catches sudo + wrong python)
+    try:
+        import joblib  # noqa: F401
+    except ImportError:
+        print("\nERROR: Required packages not found.")
+        print("This usually means 'sudo' is using a different Python than your environment.\n")
+        print("FIX: Use the full path to your Python binary with sudo:\n")
+        print(f"    sudo {sys.executable} scripts/live_monitor.py\n")
+        print("Or if using conda/venv:\n")
+        print("    sudo $(which python) scripts/live_monitor.py\n")
+        sys.exit(1)
 
     if not HAS_SCAPY:
         print("ERROR: scapy not installed. Run: pip install scapy")

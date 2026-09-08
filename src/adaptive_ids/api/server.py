@@ -9,7 +9,10 @@ Endpoints:
   GET  /health         — service health check
 
 Run:
-    uvicorn adaptive_ids.api.server:app --host 0.0.0.0 --port 8000
+    python -m uvicorn adaptive_ids.api.server:app --host 0.0.0.0 --port 8000
+
+If 'uvicorn' is not on your PATH, use:
+    python -m uvicorn adaptive_ids.api.server:app --port 8000
 """
 
 from __future__ import annotations
