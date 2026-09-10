@@ -1,0 +1,32 @@
+{
+    "name": "ADAPT-IDS",
+    "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {}
+    },
+    "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt && pip install -e .",
+    "postStartCommand": "export OMP_NUM_THREADS=1 && export OMP_MAX_ACTIVE_LEVELS=1",
+    "forwardPorts": [8501, 8000],
+    "portsAttributes": {
+        "8501": { "label": "ADAPT-IDS Dashboard", "onAutoForward": "openBrowser" },
+        "8000": { "label": "ADAPT-IDS API" }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-python.pylint"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.terminal.activateEnvironment": true,
+                "editor.formatOnSave": true,
+                "terminal.integrated.env.linux": {
+                    "OMP_NUM_THREADS": "1",
+                    "OMP_MAX_ACTIVE_LEVELS": "1"
+                }
+            }
+        }
+    }
+}
